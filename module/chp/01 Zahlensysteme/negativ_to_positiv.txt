@@ -1,0 +1,3 @@
+1) -81 in binär umwandeln
+2) Eigenkompliment berechnen
+3) Zweierkomplement berechnen
