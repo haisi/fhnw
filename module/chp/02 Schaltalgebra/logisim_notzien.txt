@@ -1,0 +1,2 @@
+blau linie = undefiniert
+rot linie = error
