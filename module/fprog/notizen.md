@@ -89,3 +89,37 @@ Can be used to introduce a new name (a synonym) for an existing type
 	data Color = Red | Yello | Green deriving (Show)
 
 ```
+
+##Lists
+```haskell
+	
+	let x = [1,2,3] :: Int
+	let y = [] :: Int
+	let z = [5] :: Int
+	
+	length x -- returns 3
+	length y -- returns 0
+
+	null x -- false
+	null y -- true
+
+	head x -- return 1 :: Int, NOT [1] :: [Int]!
+	head y -- runtime error
+
+	tail x -- return [2,3] :: [Int]
+	tail y -- exception empty list
+	tail z -- return [] :: [Int]
+
+	head x -- 1
+	head y -- exception empty list
+	head z -- 5
+
+	last x -- 3
+	last y -- exception empty list
+	last z -- 5
+
+	let myNumbers = [0..500] :: [Int]
+	take 3 myNumbers -- returns [0,1,2,3] :: [Int]
+	
+
+```
