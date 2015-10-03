@@ -123,3 +123,7 @@ Can be used to introduce a new name (a synonym) for an existing type
 	
 
 ```
+
+#General
+##IDE
+Use the github atom IDE with the haskell plugins.
