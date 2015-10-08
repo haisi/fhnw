@@ -1,10 +1,10 @@
-#Systemadministratio
-##Shell
+# Systemadministratio
+## Shell
 login -> shell -> exit
 
 Wenn ein command ausgeführt wird, wird ein fork (sub-process) erstellt, der den command ausführt und das Resultat anzeigt.
 
-###IO
+### IO
 1. IN: Standart In
 2. OUT
 	1. Standart Out
@@ -28,16 +28,16 @@ Changing the Standart In. eg.
 ```ls | more -- result of ls will be passed to command more```
 
 xargs nimmt die übergebenen Argumente und setzt sie NACH dem nächsten Command
-ergo: ```ls -l | xargs -0 rm -f```      wird zu   ```ls -l | rm -f xargs -0``` 
+ergo: ```ls -l | xargs -0 rm -f```      wird zu   ```ls -l | rm -f xargs -0```
 ```grep -rliwZ | xargs -0 rm -f```
 
-####Sonderzeichen
+#### Sonderzeichen
 ```echo "Ich bin im Ordner: `pwd`" ```
 ```!echo --zeigt wie das letztemal der echo command verwendet wurde```
 ```!! -- redo last command```
 
 
-###Verscheidene Prompts
+### Verscheidene Prompts
 - $ Normaler Nutzer
 - "#" root
 - > Es fehlt noch Eingabe
@@ -50,3 +50,15 @@ ergo: ```ls -l | xargs -0 rm -f```      wird zu   ```ls -l | rm -f xargs -0```
 ```ls -l ? --all files with one character```
 ```ls -l [a,c,g] --all files which start with a, c or g```
 ```ls -l [!a-z] --all files which aren't a to z```
+
+## Networking
+- Paketgrösse Unterschiedlich
+- Keine n-m direkete Verbindung, Paket sucht sich den optimalen Pfad.
+- Tragen Sequenznumbern, da ein Paket vor dem anderem kommen kann.
+
+ipp == internet printing protocol
+
+sudo netstat -avep |more 2> /dev/null
+
+--Zeige an welcher Prozess gehört dieser Port
+sudo lsof -i :43497
