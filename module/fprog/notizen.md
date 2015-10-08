@@ -1,5 +1,6 @@
-#Functional programming in Haskell
-##ghci basics
+Functional programming in Haskell
+====
+# ghci basics
 Commend  | Effect
 ------------- | -------------
 :?  | Zeigt den Hilfetext an
@@ -12,9 +13,9 @@ Commend  | Effect
 :set +t  | gibt immer type-info zurück
 :set prompt "ghci> "  | Ändert prompt
 
-##Haskell
+# Haskell
 
-###Basic types
+## Basic types
 
 
 - Bool
@@ -32,7 +33,7 @@ Commend  | Effect
 - Double
 
 
-###Functions
+## Functions
 
 ```haskell
 
@@ -41,7 +42,7 @@ Commend  | Effect
 
 ```
 
-####Pattern matching
+### Pattern matching
 
 ```haskell
 
@@ -56,9 +57,32 @@ Commend  | Effect
 
 ```
 
-###Tuples
+#### Case expressions
 
-####type synonyms
+```haskell
+
+describeList :: [a] -> String
+describeList xs = "The list is " ++ case xs of
+										[] -> "empty"
+										[x] -> "a singleton list"
+										xs -> "a longer list."
+
+```
+
+#### Guards
+
+```haskell
+
+abs :: (Num a, Ord a) => a -> Real
+abs n
+    | n < 0 = -n
+		| otherwise = n --otherwise == True
+
+```
+
+## Tuples
+
+### type synonyms
 Can be used to introduce a new name (a synonym) for an existing type
 
 ```haskell
@@ -82,7 +106,7 @@ Can be used to introduce a new name (a synonym) for an existing type
 ```
 
 
-###Enums
+## Enums
 ```haskell
 
 	-- dervies from (Show) to "toSting"
@@ -90,40 +114,39 @@ Can be used to introduce a new name (a synonym) for an existing type
 
 ```
 
-##Lists
+## Lists
 ```haskell
-	
-	let x = [1,2,3] :: Int
-	let y = [] :: Int
-	let z = [5] :: Int
-	
-	length x -- returns 3
-	length y -- returns 0
 
-	null x -- false
-	null y -- true
+let x = [1,2,3] :: Int
+let y = [] :: Int
+let z = [5] :: Int
 
-	head x -- return 1 :: Int, NOT [1] :: [Int]!
-	head y -- runtime error
+length x -- returns 3
+length y -- returns 0
 
-	tail x -- return [2,3] :: [Int]
-	tail y -- exception empty list
-	tail z -- return [] :: [Int]
+null x -- false
+null y -- true
 
-	head x -- 1
-	head y -- exception empty list
-	head z -- 5
+head x -- return 1 :: Int, NOT [1] :: [Int]!
+head y -- runtime error
 
-	last x -- 3
-	last y -- exception empty list
-	last z -- 5
+tail x -- return [2,3] :: [Int]
+tail y -- exception empty list
+tail z -- return [] :: [Int]
 
-	let myNumbers = [0..500] :: [Int]
-	take 3 myNumbers -- returns [0,1,2,3] :: [Int]
-	
+head x -- 1
+head y -- exception empty list
+head z -- 5
+
+last x -- 3
+last y -- exception empty list
+last z -- 5
+
+let myNumbers = [0..500] :: [Int]
+take 3 myNumbers -- returns [0,1,2,3] :: [Int]
 
 ```
 
-#General
-##IDE
+# General
+## IDE
 Use the github atom IDE with the haskell plugins.
