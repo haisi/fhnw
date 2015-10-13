@@ -42,6 +42,46 @@ Commend  | Effect
 
 ```
 
+### Lambdas
+```haskell
+-- anstatt
+incAll :: [Int] -> [Int]
+incAll xs = map inc xs
+
+inc :: Int -> Int
+inc x = x + 1
+
+-- mit Lambda
+incAll :: [Int] -> [Int]
+incAll xs = map (\x -> x + 1) xs -- anonym function
+
+```
+
+### Function composition
+```haskell
+f :: a -> b
+g :: b -> c
+
+-- (a) => f => (b)       (b) => g => (c)
+-- typesignature of (.) operator
+(.) :: (b -> c) -> (a -> b) -> a -> c
+g . f = \x -> g (f x)
+-- (a) => f => g => (c)
+
+-- Beispiel
+map (\xs -> negate (sum (tail xs))) [[1,2,3],[4,5,6],[7,8]]
+-- Zuerst tail, dann sum, dann negate
+map (negate . sum . tail) [[1,2,3],[4,5,6],[7,8]]
+```
+
+### Operatoren
+```haskell
+-- create own + operator
+(!+!) :: Int -> Int -> Int
+a !+! b = a + b
+1 !+! 2 -- returns 3
+```
+
 ### Pattern matching
 
 ```haskell
