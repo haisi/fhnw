@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0">
+    <tool name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="5"/>
+      <a name="incoming" val="5"/>
+    </tool>
+    <tool name="Pin">
+      <a name="width" val="4"/>
+    </tool>
+    <tool name="Probe">
+      <a name="facing" val="south"/>
+    </tool>
+    <tool name="Tunnel">
+      <a name="width" val="4"/>
+    </tool>
+    <tool name="Clock">
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Constant">
+      <a name="facing" val="south"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="4-Bit ALU"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="4-Bit ALU">
+    <a name="circuit" val="4-Bit ALU"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="97" y="157">B_in</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="96" y="107">A_in</text>
+      <text font-family="SansSerif" font-size="20" font-weight="bold" text-anchor="middle" x="140" y="81">4-Bit ALU</text>
+      <rect fill="none" height="190" stroke="#000000" stroke-width="2" width="140" x="70" y="50"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="188" y="134">OF</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="191" y="167">R</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="87" y="203">S</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="140" y="94">Teamname</text>
+      <circ-port height="8" pin="90,230" width="8" x="66" y="86"/>
+      <circ-port height="8" pin="90,260" width="8" x="66" y="96"/>
+      <circ-port height="8" pin="90,290" width="8" x="66" y="106"/>
+      <circ-port height="8" pin="90,320" width="8" x="66" y="116"/>
+      <circ-port height="8" pin="90,370" width="8" x="66" y="136"/>
+      <circ-port height="8" pin="90,400" width="8" x="66" y="146"/>
+      <circ-port height="8" pin="90,430" width="8" x="66" y="156"/>
+      <circ-port height="8" pin="90,460" width="8" x="66" y="166"/>
+      <circ-port height="8" pin="90,510" width="8" x="66" y="186"/>
+      <circ-port height="8" pin="90,540" width="8" x="66" y="196"/>
+      <circ-port height="8" pin="90,570" width="8" x="66" y="206"/>
+      <circ-port height="10" pin="410,270" width="10" x="205" y="125"/>
+      <circ-port height="10" pin="410,310" width="10" x="205" y="145"/>
+      <circ-port height="10" pin="410,340" width="10" x="205" y="155"/>
+      <circ-port height="10" pin="410,370" width="10" x="205" y="165"/>
+      <circ-port height="10" pin="410,400" width="10" x="205" y="175"/>
+      <circ-anchor facing="east" height="6" width="6" x="207" y="47"/>
+    </appear>
+    <wire from="(350,310)" to="(410,310)"/>
+    <wire from="(350,370)" to="(410,370)"/>
+    <wire from="(350,270)" to="(410,270)"/>
+    <wire from="(350,340)" to="(410,340)"/>
+    <wire from="(350,400)" to="(410,400)"/>
+    <wire from="(90,400)" to="(150,400)"/>
+    <wire from="(90,510)" to="(150,510)"/>
+    <wire from="(90,320)" to="(150,320)"/>
+    <wire from="(90,370)" to="(150,370)"/>
+    <wire from="(90,540)" to="(150,540)"/>
+    <wire from="(90,570)" to="(150,570)"/>
+    <wire from="(90,290)" to="(150,290)"/>
+    <wire from="(90,230)" to="(150,230)"/>
+    <wire from="(90,430)" to="(150,430)"/>
+    <wire from="(90,460)" to="(150,460)"/>
+    <wire from="(90,260)" to="(150,260)"/>
+    <wire from="(230,170)" to="(230,180)"/>
+    <wire from="(430,520)" to="(430,530)"/>
+    <wire from="(290,170)" to="(290,180)"/>
+    <wire from="(420,520)" to="(420,540)"/>
+    <wire from="(380,510)" to="(380,540)"/>
+    <wire from="(380,540)" to="(420,540)"/>
+    <wire from="(350,510)" to="(380,510)"/>
+    <wire from="(220,170)" to="(220,210)"/>
+    <wire from="(280,170)" to="(280,210)"/>
+    <comp lib="5" loc="(420,520)" name="Hex Digit Display"/>
+    <comp lib="0" loc="(230,180)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(90,290)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A1"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(420,68)" name="Text">
+      <a name="text" val="ausgeführt von"/>
+      <a name="font" val="SansSerif bold 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="5" loc="(280,170)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(48,39)" name="Text">
+      <a name="text" val="Kleinprojekt Arithmetic and Logic Unit"/>
+      <a name="font" val="SansSerif bold 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(410,400)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="R0"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(521,41)" name="Text">
+      <a name="text" val="Mephisto"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(417,41)" name="Text">
+      <a name="text" val="Teamname:"/>
+      <a name="font" val="SansSerif bold 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(420,89)" name="Text">
+      <a name="text" val="hasan.kara@students.fhnw.ch"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(410,270)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="OF"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(90,540)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S1"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(90,460)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B0"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(90,320)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A0"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(90,230)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A3"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(90,430)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B1"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(90,370)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B3"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp loc="(350,210)" name="Interface"/>
+    <comp lib="0" loc="(410,340)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="R2"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="5" loc="(220,170)" name="Hex Digit Display"/>
+    <comp lib="0" loc="(90,510)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S2"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(410,310)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="R3"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(410,370)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="R1"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(90,400)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B2"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(430,530)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(290,180)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(90,570)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S0"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(90,260)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A2"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+  </circuit>
+  <circuit name="Interface">
+    <a name="circuit" val="Interface"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="west"/>
+    <a name="clabelfont" val="SansSerif plain 24"/>
+    <appear>
+      <rect fill="none" height="380" stroke="#000000" stroke-width="2" width="200" x="40" y="20"/>
+      <text font-family="SansSerif" font-size="20" font-weight="bold" text-anchor="middle" x="144" y="201">4-Bit ALU</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="174" y="38">7-Seg B</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="110" y="38">7-Seg A</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="221" y="167">R</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="218" y="84">OF</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="66" y="87">A_in</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="68" y="227">B_in</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="202" y="323">7_Seg R</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="57" y="354">S</text>
+      <circ-port height="8" pin="120,190" width="8" x="36" y="36"/>
+      <circ-port height="10" pin="470,240" width="10" x="235" y="115"/>
+      <circ-port height="8" pin="120,160" width="8" x="36" y="66"/>
+      <circ-port height="10" pin="470,220" width="10" x="235" y="145"/>
+      <circ-port height="8" pin="120,130" width="8" x="36" y="96"/>
+      <circ-port height="10" pin="470,200" width="10" x="235" y="175"/>
+      <circ-port height="8" pin="120,100" width="8" x="36" y="126"/>
+      <circ-port height="10" pin="470,180" width="10" x="235" y="205"/>
+      <circ-port height="8" pin="120,330" width="8" x="36" y="176"/>
+      <circ-port height="8" pin="120,300" width="8" x="36" y="206"/>
+      <circ-port height="8" pin="120,270" width="8" x="36" y="236"/>
+      <circ-port height="8" pin="120,240" width="8" x="36" y="266"/>
+      <circ-port height="8" pin="120,440" width="8" x="36" y="316"/>
+      <circ-port height="8" pin="120,410" width="8" x="36" y="346"/>
+      <circ-port height="8" pin="120,380" width="8" x="36" y="376"/>
+      <circ-port height="10" pin="470,130" width="10" x="235" y="315"/>
+      <circ-port height="10" pin="470,270" width="10" x="235" y="75"/>
+      <circ-anchor facing="east" height="6" width="6" x="237" y="17"/>
+    </appear>
+    <comp lib="0" loc="(470,200)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="R1"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,130)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A1"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,270)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B1"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,240)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B0"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,410)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S1"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(470,130)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="R"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,380)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S0"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(470,270)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="OF"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,300)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B2"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,160)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A2"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,190)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A3"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,100)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A0"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(470,240)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="R3"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,330)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B3"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(470,220)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="R2"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,440)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S2"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(470,180)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="R0"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+  </circuit>
+  <circuit name="blackbox">
+    <a name="circuit" val="blackbox"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <comp loc="(250,140)" name="4-Bit ALU"/>
+  </circuit>
+</project>

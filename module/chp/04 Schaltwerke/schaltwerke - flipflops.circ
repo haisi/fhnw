@@ -1,0 +1,4019 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0"/>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="RS-FF (Eigenbau)"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="--- FLIPFLOPS ---">
+    <a name="circuit" val="--- FLIPFLOPS ---"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+  </circuit>
+  <circuit name="RS-FF (Eigenbau)">
+    <a name="circuit" val="RS-FF (Eigenbau)"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <text font-family="SansSerif" font-size="16" font-weight="bold" text-anchor="middle" x="121" y="104">RS-FF</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="87" y="125">R</text>
+      <rect fill="none" height="80" stroke="#000000" stroke-width="2" width="80" x="80" y="60"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="88" y="85">S</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="148" y="84">Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="145" y="124">~Q</text>
+      <circ-port height="8" pin="130,130" width="8" x="76" y="76"/>
+      <circ-port height="8" pin="130,220" width="8" x="76" y="116"/>
+      <circ-port height="10" pin="580,360" width="10" x="155" y="115"/>
+      <circ-port height="10" pin="580,340" width="10" x="155" y="75"/>
+      <circ-anchor facing="east" height="6" width="6" x="77" y="57"/>
+    </appear>
+    <wire from="(190,150)" to="(190,310)"/>
+    <wire from="(510,210)" to="(510,310)"/>
+    <wire from="(490,140)" to="(490,270)"/>
+    <wire from="(210,200)" to="(210,270)"/>
+    <wire from="(210,200)" to="(330,200)"/>
+    <wire from="(190,310)" to="(310,310)"/>
+    <wire from="(210,360)" to="(580,360)"/>
+    <wire from="(370,140)" to="(490,140)"/>
+    <wire from="(370,210)" to="(510,210)"/>
+    <wire from="(380,270)" to="(490,270)"/>
+    <wire from="(190,150)" to="(330,150)"/>
+    <wire from="(190,340)" to="(580,340)"/>
+    <wire from="(210,270)" to="(210,360)"/>
+    <wire from="(130,220)" to="(330,220)"/>
+    <wire from="(130,130)" to="(330,130)"/>
+    <wire from="(380,310)" to="(510,310)"/>
+    <wire from="(190,310)" to="(190,340)"/>
+    <wire from="(210,270)" to="(310,270)"/>
+    <comp lib="6" loc="(522,143)" name="Text">
+      <a name="text" val="z0_t+1"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(324,275)" name="Text">
+      <a name="text" val="Delay"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(130,130)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="x0 = S"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(580,360)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(200,192)" name="Text">
+      <a name="text" val="z0_t"/>
+      <a name="font" val="SansSerif bold 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(118,476)" name="Text">
+      <a name="text" val="Werden hier S=1 und R=1 gesetzt, so sind beide Ausgänge gleichzeitig"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(548,214)" name="Text">
+      <a name="text" val="z1_t+1"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(118,453)" name="Text">
+      <a name="text" val="daher bei Error-Meldungen vorerst S zweimal betätigen (on - off)."/>
+      <a name="font" val="SansSerif bold 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(309,102)" name="Text">
+      <a name="text" val="Schaltnetz"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(62,458)" name="Text">
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(118,415)" name="Text">
+      <a name="text" val="Bemerkung:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(130,220)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="x1 = R"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="1" loc="(370,210)" name="NOR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(118,434)" name="Text">
+      <a name="text" val="Logisim tut sich schwer mit Initialisierungen bei Rückkopplungen,"/>
+      <a name="font" val="SansSerif bold 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(118,493)" name="Text">
+      <a name="text" val="0 oder 1, ein Widerspruch zu den Bezeichnungen Q und ~Q. Daher wird"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp loc="(260,110)" name="SN Box"/>
+    <comp lib="6" loc="(325,316)" name="Text">
+      <a name="text" val="Delay"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="1" loc="(370,140)" name="NOR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(118,510)" name="Text">
+      <a name="text" val="R=S=1 verboten."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp loc="(310,260)" name="Delay Box"/>
+    <comp lib="0" loc="(580,340)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp loc="(310,300)" name="Delay Box"/>
+    <comp lib="6" loc="(146,155)" name="Text">
+      <a name="text" val="z1_t"/>
+      <a name="font" val="SansSerif bold 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(59,51)" name="Text">
+      <a name="text" val="RS-FF in Schaltwerk-Darstellung gemäss Skript"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+  </circuit>
+  <circuit name="RS-FF als Black Box">
+    <a name="circuit" val="RS-FF als Black Box"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(90,120)" to="(130,120)"/>
+    <wire from="(90,160)" to="(130,160)"/>
+    <wire from="(210,120)" to="(250,120)"/>
+    <wire from="(210,160)" to="(250,160)"/>
+    <comp loc="(130,100)" name="RS-FF (Eigenbau)"/>
+    <comp lib="6" loc="(67,230)" name="Text">
+      <a name="text" val="Bemerkung:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(67,267)" name="Text">
+      <a name="text" val="daher bei Error-Meldungen vorerst S zweimal betätigen (on - off)."/>
+      <a name="font" val="SansSerif bold 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(62,458)" name="Text">
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(59,51)" name="Text">
+      <a name="text" val="RS-FF in Black-Box-Darstellung"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(250,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(67,249)" name="Text">
+      <a name="text" val="Logisim tut sich schwer mit Initialisierungen bei Rückkopplungen,"/>
+      <a name="font" val="SansSerif bold 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(90,160)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="R"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(67,327)" name="Text">
+      <a name="text" val="R=S=1 verboten."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(250,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(67,291)" name="Text">
+      <a name="text" val="Werden hier S=1 und R=1 gesetzt, so sind beide Ausgänge gleichzeitig"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(90,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(67,310)" name="Text">
+      <a name="text" val="0 oder 1, ein Widerspruch zu den Bezeichnungen Q und ~Q. Daher wird"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+  </circuit>
+  <circuit name="RS-FF als BB aus Bibliothek">
+    <a name="circuit" val="RS-FF als BB aus Bibliothek"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(90,120)" to="(130,120)"/>
+    <wire from="(90,160)" to="(130,160)"/>
+    <wire from="(210,120)" to="(250,120)"/>
+    <wire from="(210,160)" to="(250,160)"/>
+    <comp lib="0" loc="(250,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(250,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp loc="(130,100)" name="RS-FF (aus Bibliothek)"/>
+    <comp lib="0" loc="(90,160)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="R"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(59,51)" name="Text">
+      <a name="text" val="RS-FF in Black-Box-Darstellung mit Bibliotheks-RS-FF"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(90,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(58,323)" name="Text">
+      <a name="text" val="die Ausgangsbezeichnungen Q und ~Q nicht mehr widersprüchlich sind."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(59,303)" name="Text">
+      <a name="text" val="Zudem findet Logisim für die Situation R=S=1 eine Vorranglösung, womit zumindest"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(58,272)" name="Text">
+      <a name="text" val="Logisim initialisiert das FF mit Q=0."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(59,229)" name="Text">
+      <a name="text" val="Bemerkung:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(58,251)" name="Text">
+      <a name="text" val="Das RS-FF aus der Bibliothek hat keine Schwierigkeiten mit Anfangsbedingungen:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+  </circuit>
+  <circuit name="RS-FF mit R- und S-Eingängen verbunden">
+    <a name="circuit" val="RS-FF mit R- und S-Eingängen verbunden"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(130,120)" to="(200,120)"/>
+    <wire from="(90,120)" to="(130,120)"/>
+    <wire from="(130,120)" to="(130,160)"/>
+    <wire from="(280,120)" to="(320,120)"/>
+    <wire from="(280,160)" to="(320,160)"/>
+    <wire from="(130,160)" to="(150,160)"/>
+    <wire from="(180,160)" to="(200,160)"/>
+    <comp lib="6" loc="(59,51)" name="Text">
+      <a name="text" val="RS-FF mit R- und S-Eingang verbunden"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(320,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="1" loc="(180,160)" name="NOT Gate"/>
+    <comp lib="6" loc="(66,239)" name="Text">
+      <a name="text" val="Diese Schaltung entspricht einem zustandsgesteuerten D-FF."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(320,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(90,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp loc="(200,100)" name="RS-FF (aus Bibliothek)"/>
+    <comp lib="6" loc="(66,222)" name="Text">
+      <a name="text" val="Bemerkung:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(66,263)" name="Text">
+      <a name="text" val="Logisim initialisiert das FF mit Q=0."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+  </circuit>
+  <circuit name="D-FF (zustandsgesteuert)">
+    <a name="circuit" val="D-FF (zustandsgesteuert)"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(90,120)" to="(130,120)"/>
+    <wire from="(90,140)" to="(130,140)"/>
+    <wire from="(210,120)" to="(250,120)"/>
+    <wire from="(210,160)" to="(250,160)"/>
+    <comp lib="6" loc="(70,298)" name="Text">
+      <a name="text" val="Für C=0 wird/ist Q unveränderbar."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(250,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(70,232)" name="Text">
+      <a name="text" val="Bemerkung:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp loc="(130,100)" name="Zustandsgesteuertes D-FF reduziert (aus Bibl.)"/>
+    <comp lib="6" loc="(70,251)" name="Text">
+      <a name="text" val="D-FF zustandsgesteuert."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(59,51)" name="Text">
+      <a name="text" val="D-FF in Black-Box-Darstellung"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(90,140)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(90,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(70,280)" name="Text">
+      <a name="text" val="Für C=1 arbeitet das D-FF im Transparent-Mode: Q folgt D."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(250,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+  </circuit>
+  <circuit name="D-FF erweitert (zustandsgesteuert)">
+    <a name="circuit" val="D-FF erweitert (zustandsgesteuert)"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(100,250)" to="(180,250)"/>
+    <wire from="(150,200)" to="(160,200)"/>
+    <wire from="(180,180)" to="(180,250)"/>
+    <wire from="(160,180)" to="(160,200)"/>
+    <wire from="(200,180)" to="(200,280)"/>
+    <wire from="(100,120)" to="(140,120)"/>
+    <wire from="(100,140)" to="(140,140)"/>
+    <wire from="(220,160)" to="(260,160)"/>
+    <wire from="(220,120)" to="(260,120)"/>
+    <wire from="(100,200)" to="(120,200)"/>
+    <wire from="(100,280)" to="(200,280)"/>
+    <comp lib="6" loc="(77,389)" name="Text">
+      <a name="text" val="Für C=0 wird/ist Q unveränderbar."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(77,333)" name="Text">
+      <a name="text" val="Bemerkung:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(77,349)" name="Text">
+      <a name="text" val="D-FF zustandsgesteuert."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(77,456)" name="Text">
+      <a name="text" val="S und R wirken mit höchster Priorität, auch dann, wenn das D-FF nicht enabled ist."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="5" loc="(100,280)" name="Button">
+      <a name="label" val="Reset"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(77,414)" name="Text">
+      <a name="text" val="~Enable wurde tief aktiv gewählt, weil Logisim beim Aufstarten alle Eingänge tief setzt:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="1" loc="(150,200)" name="NOT Gate"/>
+    <comp lib="6" loc="(69,51)" name="Text">
+      <a name="text" val="D-FF mit weiteren Eingängen in Black-Box-Darstellung"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(77,474)" name="Text">
+      <a name="text" val="Die Tasten verhindern, dass S und R gleichzeitig bedient werden können."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(100,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(100,140)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(260,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(100,200)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="~Enable"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp loc="(140,100)" name="Zustandsgesteuertes D-FF (aus Bibl.)"/>
+    <comp lib="6" loc="(77,432)" name="Text">
+      <a name="text" val="Damit ist das D-FF sofort enabled."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(260,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="5" loc="(100,250)" name="Button">
+      <a name="label" val="Set"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(77,372)" name="Text">
+      <a name="text" val="Für C=1 arbeitet das D-FF im Transparent-Mode: Q folgt D."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+  </circuit>
+  <circuit name="D-FF (Pos. 1-Flanken-getriggert)">
+    <a name="circuit" val="D-FF (Pos. 1-Flanken-getriggert)"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(100,120)" to="(140,120)"/>
+    <wire from="(100,140)" to="(140,140)"/>
+    <wire from="(220,160)" to="(260,160)"/>
+    <wire from="(220,120)" to="(260,120)"/>
+    <comp lib="0" loc="(100,140)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(78,226)" name="Text">
+      <a name="text" val="Bemerkung:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(78,244)" name="Text">
+      <a name="text" val="Auf steigende Flanke (= positive Flanke) wird der Wert von D detektiert, gespeichert und"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(260,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(260,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp loc="(140,100)" name="Positiv 1-flankengetriggertes D-FF ohne Hilfseingänge"/>
+    <comp lib="0" loc="(100,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(69,51)" name="Text">
+      <a name="text" val="D-FF, positiv 1-Flanken-getriggert"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(78,261)" name="Text">
+      <a name="text" val="sofort an Q angezeigt."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(78,285)" name="Text">
+      <a name="text" val="Für C=0 oder C=1 oder auf die fallende Flanke (= negative Flanke) von C bleibt Q unverändert."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+  </circuit>
+  <circuit name="D-FF erweitert (Pos. 1-Flanken-getriggert)">
+    <a name="circuit" val="D-FF erweitert (Pos. 1-Flanken-getriggert)"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(100,250)" to="(180,250)"/>
+    <wire from="(150,200)" to="(160,200)"/>
+    <wire from="(180,180)" to="(180,250)"/>
+    <wire from="(160,180)" to="(160,200)"/>
+    <wire from="(200,180)" to="(200,280)"/>
+    <wire from="(100,120)" to="(140,120)"/>
+    <wire from="(100,140)" to="(140,140)"/>
+    <wire from="(220,160)" to="(260,160)"/>
+    <wire from="(220,120)" to="(260,120)"/>
+    <wire from="(100,200)" to="(120,200)"/>
+    <wire from="(100,280)" to="(200,280)"/>
+    <comp lib="6" loc="(77,392)" name="Text">
+      <a name="text" val="Für C=0 oder C=1 oder auf die fallende Flanke (= negative Flanke) von C bleibt Q unverändert."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(260,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(100,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp loc="(140,100)" name="Positiv 1-flankengetriggertes D-FF"/>
+    <comp lib="5" loc="(100,250)" name="Button">
+      <a name="label" val="Set"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(69,51)" name="Text">
+      <a name="text" val="D-FF, positiv 1-Flanken-getriggert"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(77,430)" name="Text">
+      <a name="text" val="Damit ist das D-FF sofort enabled."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(77,470)" name="Text">
+      <a name="text" val="Die Wahl der Tasten hier verhindern, dass S und R gleichzeitig bedient werden können."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="5" loc="(100,280)" name="Button">
+      <a name="label" val="Reset"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(77,369)" name="Text">
+      <a name="text" val="sofort an Q angezeigt."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(77,334)" name="Text">
+      <a name="text" val="Bemerkung:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(77,415)" name="Text">
+      <a name="text" val="~Enable wurde tief aktiv gewählt, weil Logisim beim Aufstarten alle Eingänge tief setzt:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(77,454)" name="Text">
+      <a name="text" val="S und R wirken mit höchster Priorität, auch dann wenn das D-FF nicht enabled ist."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(77,353)" name="Text">
+      <a name="text" val="Auf steigende Flanke (= positive Flanke) wird der Wert von D detektiert, gespeichert und"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(100,200)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="~Enable"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(260,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(100,140)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="1" loc="(150,200)" name="NOT Gate"/>
+  </circuit>
+  <circuit name="D-FF (Neg. 1-Flanken-getriggert)">
+    <a name="circuit" val="D-FF (Neg. 1-Flanken-getriggert)"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(100,250)" to="(180,250)"/>
+    <wire from="(150,200)" to="(160,200)"/>
+    <wire from="(180,180)" to="(180,250)"/>
+    <wire from="(160,180)" to="(160,200)"/>
+    <wire from="(200,180)" to="(200,280)"/>
+    <wire from="(100,120)" to="(140,120)"/>
+    <wire from="(100,140)" to="(140,140)"/>
+    <wire from="(220,160)" to="(260,160)"/>
+    <wire from="(220,120)" to="(260,120)"/>
+    <wire from="(100,200)" to="(120,200)"/>
+    <wire from="(100,280)" to="(200,280)"/>
+    <comp loc="(140,100)" name="Negativ 1-flankengetriggertes D-FF"/>
+    <comp lib="0" loc="(260,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(80,454)" name="Text">
+      <a name="text" val="S und R wirken mit höchster Priorität, auch dann wenn das D-FF nicht enabled ist."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(260,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(80,411)" name="Text">
+      <a name="text" val="~Enable wurde tief aktiv gewählt, weil Logisim beim Aufstarten alle Eingänge tief setzt:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(80,388)" name="Text">
+      <a name="text" val="Für C=0 oder C=1 oder auf die steigende Flanke (= positive Flanke) von C bleibt Q unverändert."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(80,427)" name="Text">
+      <a name="text" val="Damit ist das D-FF sofort enabled."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="5" loc="(100,280)" name="Button">
+      <a name="label" val="Reset"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(69,51)" name="Text">
+      <a name="text" val="D-FF, negativ 1-Flanken-getriggert"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(100,140)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(80,470)" name="Text">
+      <a name="text" val="Die Wahl der Tasten hier verhindern, dass S und R gleichzeitig bedient werden können."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="5" loc="(100,250)" name="Button">
+      <a name="label" val="Set"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(80,329)" name="Text">
+      <a name="text" val="Bemerkung:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(100,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="1" loc="(150,200)" name="NOT Gate"/>
+    <comp lib="0" loc="(100,200)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="~Enable"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(80,364)" name="Text">
+      <a name="text" val="sofort an Q angezeigt."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(80,347)" name="Text">
+      <a name="text" val="Auf fallende Flanke (= negative Flanke) wird der Wert von D detektiert, gespeichert und"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+  </circuit>
+  <circuit name="D-FF (Pos.-Neg. 2-Flanken-getriggert)">
+    <a name="circuit" val="D-FF (Pos.-Neg. 2-Flanken-getriggert)"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(100,250)" to="(180,250)"/>
+    <wire from="(150,200)" to="(160,200)"/>
+    <wire from="(180,180)" to="(180,250)"/>
+    <wire from="(160,180)" to="(160,200)"/>
+    <wire from="(200,180)" to="(200,280)"/>
+    <wire from="(100,120)" to="(140,120)"/>
+    <wire from="(100,140)" to="(140,140)"/>
+    <wire from="(220,160)" to="(260,160)"/>
+    <wire from="(220,120)" to="(260,120)"/>
+    <wire from="(100,200)" to="(120,200)"/>
+    <wire from="(100,280)" to="(200,280)"/>
+    <comp lib="6" loc="(79,470)" name="Text">
+      <a name="text" val="S und R wirken mit höchster Priorität, auch dann wenn das D-FF nicht enabled ist."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="5" loc="(100,280)" name="Button">
+      <a name="label" val="Reset"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(79,335)" name="Text">
+      <a name="text" val="Bemerkung:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(79,430)" name="Text">
+      <a name="text" val="~Enable wurde tief aktiv gewählt, weil Logisim beim Aufstarten alle Eingänge tief setzt:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(79,354)" name="Text">
+      <a name="text" val="Auf steigende Vorderflanke (= positive Vorderflanke) wird der Wert von D detektiert und"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="5" loc="(100,250)" name="Button">
+      <a name="label" val="Set"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp loc="(140,100)" name="Pos-Neg 2-flankengetriggertes D-FF"/>
+    <comp lib="6" loc="(69,51)" name="Text">
+      <a name="text" val="D-FF, positiv-negativ 2-Flanken-getriggert"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="1" loc="(150,200)" name="NOT Gate"/>
+    <comp lib="6" loc="(79,407)" name="Text">
+      <a name="text" val="Für C=0 oder C=1 geschieht nichts."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(260,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(79,447)" name="Text">
+      <a name="text" val="Damit ist das D-FF sofort enabled."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(260,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(100,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(100,200)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="~Enable"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(100,140)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(79,392)" name="Text">
+      <a name="text" val="Auf fallende Hinterflanke wird der zwischengespeicherte Wert an Q ausgegeben."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(79,370)" name="Text">
+      <a name="text" val="zwischengespeichert."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(79,488)" name="Text">
+      <a name="text" val="Die Wahl der Tasten hier verhindern, dass S und R gleichzeitig bedient werden können."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+  </circuit>
+  <circuit name="D-FF (Neg.-Pos. 2-Flanken-getriggert)">
+    <a name="circuit" val="D-FF (Neg.-Pos. 2-Flanken-getriggert)"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(100,120)" to="(140,120)"/>
+    <wire from="(100,140)" to="(140,140)"/>
+    <wire from="(220,160)" to="(260,160)"/>
+    <wire from="(220,120)" to="(260,120)"/>
+    <comp lib="6" loc="(82,242)" name="Text">
+      <a name="text" val="Auf fallende Vorderflanke (= negative Vorderflanke) wird der Wert von D detektiert und"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(100,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(82,258)" name="Text">
+      <a name="text" val="zwischengespeichert."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp loc="(140,100)" name="Neg-Pos 2-flankengetriggertes D-FF ohne Hilseingänge"/>
+    <comp lib="6" loc="(69,51)" name="Text">
+      <a name="text" val="D-FF, negativ-positiv 2-Flanken-getriggert"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(260,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(82,221)" name="Text">
+      <a name="text" val="Bemerkung:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(100,140)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(82,300)" name="Text">
+      <a name="text" val="Für C=0 oder C=1 geschieht nichts."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(82,281)" name="Text">
+      <a name="text" val="Auf steigende Hinterflanke wird der zwischengespeicherte Wert an Q ausgegeben."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(260,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+  </circuit>
+  <circuit name="D-FF erweitert (Neg.-Pos. 2-Flanken-getriggert)">
+    <a name="circuit" val="D-FF erweitert (Neg.-Pos. 2-Flanken-getriggert)"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(100,250)" to="(180,250)"/>
+    <wire from="(150,200)" to="(160,200)"/>
+    <wire from="(180,180)" to="(180,250)"/>
+    <wire from="(160,180)" to="(160,200)"/>
+    <wire from="(200,180)" to="(200,280)"/>
+    <wire from="(100,120)" to="(140,120)"/>
+    <wire from="(100,140)" to="(140,140)"/>
+    <wire from="(220,160)" to="(260,160)"/>
+    <wire from="(220,120)" to="(260,120)"/>
+    <wire from="(100,200)" to="(120,200)"/>
+    <wire from="(100,280)" to="(200,280)"/>
+    <comp lib="6" loc="(79,396)" name="Text">
+      <a name="text" val="Auf steigende Hinterflanke wird der zwischengespeicherte Wert an Q ausgegeben."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(260,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(100,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(79,476)" name="Text">
+      <a name="text" val="S und R wirken mit höchster Priorität, auch dann wenn das D-FF nicht enabled ist."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(100,140)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(69,51)" name="Text">
+      <a name="text" val="D-FF, negativ-positiv 2-Flanken-getriggert"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(100,200)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="~Enable"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="5" loc="(100,280)" name="Button">
+      <a name="label" val="Reset"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(79,415)" name="Text">
+      <a name="text" val="Für C=0 oder C=1 geschieht nichts."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp loc="(140,100)" name="Neg-Pos 2-flankengetriggertes D-FF"/>
+    <comp lib="6" loc="(79,331)" name="Text">
+      <a name="text" val="Bemerkung:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(79,437)" name="Text">
+      <a name="text" val="~Enable wurde tief aktiv gewählt, weil Logisim beim Aufstarten alle Eingänge tief setzt:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(79,370)" name="Text">
+      <a name="text" val="zwischengespeichert."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(260,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="5" loc="(100,250)" name="Button">
+      <a name="label" val="Set"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(79,452)" name="Text">
+      <a name="text" val="Damit ist das D-FF sofort enabled."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(79,493)" name="Text">
+      <a name="text" val="Die Wahl der Tasten hier verhindern, dass S und R gleichzeitig bedient werden können."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(79,353)" name="Text">
+      <a name="text" val="Auf fallende Vorderflanke (= negative Vorderflanke) wird der Wert von D detektiert und"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="1" loc="(150,200)" name="NOT Gate"/>
+  </circuit>
+  <circuit name="JK-FF (Pos. 1-Flanken-getriggert)">
+    <a name="circuit" val="JK-FF (Pos. 1-Flanken-getriggert)"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(100,120)" to="(140,120)"/>
+    <wire from="(100,160)" to="(140,160)"/>
+    <wire from="(100,140)" to="(140,140)"/>
+    <wire from="(220,160)" to="(260,160)"/>
+    <wire from="(220,120)" to="(260,120)"/>
+    <comp lib="0" loc="(260,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(80,222)" name="Text">
+      <a name="text" val="Bemerkung:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp loc="(140,100)" name="Positiv 1-flankengetriggertes JK-FF ohne Hilfseingänge"/>
+    <comp lib="6" loc="(80,327)" name="Text">
+      <a name="text" val="Für C=0 oder C=1 oder auf die fallende Flanke (= negative Flanke) von C bleibt Q unverändert."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(80,289)" name="Text">
+      <a name="text" val="Für J=0 und K=1 wird/bleibt Q=0."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(80,304)" name="Text">
+      <a name="text" val="Für J=1 und K=0 wird/bleibt Q=1."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(80,258)" name="Text">
+      <a name="text" val="Für J=K=0 bleibt Q unverändert."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(260,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(100,160)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="K"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(80,239)" name="Text">
+      <a name="text" val="Auf steigende Flanke (= positive Flanke) werden die Werte von J und K detektiert."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(69,51)" name="Text">
+      <a name="text" val="JK-FF, positiv 1-Flanken-getriggert"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(100,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="J"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(100,140)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(80,273)" name="Text">
+      <a name="text" val="Für J=K=1 wird Q invertiert."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+  </circuit>
+  <circuit name="JK-FF erweitert(Pos. 1-Flanken-getriggert)">
+    <a name="circuit" val="JK-FF erweitert(Pos. 1-Flanken-getriggert)"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(100,250)" to="(180,250)"/>
+    <wire from="(150,200)" to="(160,200)"/>
+    <wire from="(180,180)" to="(180,250)"/>
+    <wire from="(160,180)" to="(160,200)"/>
+    <wire from="(200,180)" to="(200,280)"/>
+    <wire from="(100,120)" to="(140,120)"/>
+    <wire from="(100,160)" to="(140,160)"/>
+    <wire from="(100,140)" to="(140,140)"/>
+    <wire from="(220,160)" to="(260,160)"/>
+    <wire from="(220,120)" to="(260,120)"/>
+    <wire from="(100,200)" to="(120,200)"/>
+    <wire from="(100,280)" to="(200,280)"/>
+    <comp lib="6" loc="(78,329)" name="Text">
+      <a name="text" val="Bemerkung:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(100,140)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(78,369)" name="Text">
+      <a name="text" val="Für J=K=0 bleibt Q unverändert."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(78,401)" name="Text">
+      <a name="text" val="Für J=0 und K=1 wird/bleibt Q=0."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(78,351)" name="Text">
+      <a name="text" val="Auf steigende Flanke (= positive Flanke) werden die Werte von J und K detektiert."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(100,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="J"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(78,479)" name="Text">
+      <a name="text" val="Damit ist das D-FF sofort enabled."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="5" loc="(100,250)" name="Button">
+      <a name="label" val="Set"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(78,463)" name="Text">
+      <a name="text" val="~Enable wurde tief aktiv gewählt, weil Logisim beim Aufstarten alle Eingänge tief setzt:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(100,200)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="~Enable"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(78,385)" name="Text">
+      <a name="text" val="Für J=K=1 wird Q invertiert."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(69,51)" name="Text">
+      <a name="text" val="JK-FF, positiv 1-Flanken-getriggert"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="1" loc="(150,200)" name="NOT Gate"/>
+    <comp lib="0" loc="(260,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(78,438)" name="Text">
+      <a name="text" val="Für C=0 oder C=1 oder auf die fallende Flanke (= negative Flanke) von C bleibt Q unverändert."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp loc="(140,100)" name="Positiv 1-flankengetriggertes JK-FF"/>
+    <comp lib="5" loc="(100,280)" name="Button">
+      <a name="label" val="Reset"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(260,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(78,517)" name="Text">
+      <a name="text" val="Die Wahl der Tasten hier verhindern, dass S und R gleichzeitig bedient werden können."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(78,418)" name="Text">
+      <a name="text" val="Für J=1 und K=0 wird/bleibt Q=1."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(78,501)" name="Text">
+      <a name="text" val="S und R wirken mit höchster Priorität, auch dann wenn das D-FF nicht enabled ist."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(100,160)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="K"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+  </circuit>
+  <circuit name="JK-FF (Pos.-Neg. 2-Flanken-getriggert)">
+    <a name="circuit" val="JK-FF (Pos.-Neg. 2-Flanken-getriggert)"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(100,120)" to="(140,120)"/>
+    <wire from="(100,160)" to="(140,160)"/>
+    <wire from="(100,140)" to="(140,140)"/>
+    <wire from="(220,160)" to="(260,160)"/>
+    <wire from="(220,120)" to="(260,120)"/>
+    <comp loc="(140,100)" name="Pos-Neg 2-flankengetriggertes JK-FF ohne Hilfseingänge"/>
+    <comp lib="6" loc="(80,321)" name="Text">
+      <a name="text" val="Auf fallende Hinterflanke wird der zwischengespeicherte Wert an Q ausgegeben."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(100,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="J"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(80,223)" name="Text">
+      <a name="text" val="Bemerkung:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(80,255)" name="Text">
+      <a name="text" val="Für J=K=0 bleibt Zwischenspeicherung unverändert."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(80,345)" name="Text">
+      <a name="text" val="Für C=0 oder C=1 geschieht nichts."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(100,140)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(260,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(80,239)" name="Text">
+      <a name="text" val="Auf steigende Vorderflanke (= positive Vorderflanke) werden die Werte von J und K detektiert."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(69,51)" name="Text">
+      <a name="text" val="JK-FF, positiv-negativ 2-Flanken-getriggert"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(260,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(100,160)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="K"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(80,271)" name="Text">
+      <a name="text" val="Für J=K=1 wird Zwischenspeicherung invertiert."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(80,304)" name="Text">
+      <a name="text" val="Für J=1 und K=0 wird/bleibt Zwischenspeicherung=1."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(80,287)" name="Text">
+      <a name="text" val="Für J=0 und K=1 wird/bleibt Zwischenspeicherung=0."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+  </circuit>
+  <circuit name="JK-FF erweitert (Pos.-Neg. 2-Flanken-getriggert)">
+    <a name="circuit" val="JK-FF erweitert (Pos.-Neg. 2-Flanken-getriggert)"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(100,250)" to="(180,250)"/>
+    <wire from="(150,200)" to="(160,200)"/>
+    <wire from="(180,180)" to="(180,250)"/>
+    <wire from="(160,180)" to="(160,200)"/>
+    <wire from="(200,180)" to="(200,280)"/>
+    <wire from="(100,120)" to="(140,120)"/>
+    <wire from="(100,160)" to="(140,160)"/>
+    <wire from="(100,140)" to="(140,140)"/>
+    <wire from="(220,160)" to="(260,160)"/>
+    <wire from="(220,120)" to="(260,120)"/>
+    <wire from="(100,200)" to="(120,200)"/>
+    <wire from="(100,280)" to="(200,280)"/>
+    <comp lib="6" loc="(69,51)" name="Text">
+      <a name="text" val="JK-FF, positiv-negativ 2-Flanken-getriggert"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp loc="(140,100)" name="Pos-Neg 2-flankengetriggertes JK-FF"/>
+    <comp lib="6" loc="(77,479)" name="Text">
+      <a name="text" val="~Enable wurde tief aktiv gewählt, weil Logisim beim Aufstarten alle Eingänge tief setzt:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="1" loc="(150,200)" name="NOT Gate"/>
+    <comp lib="6" loc="(77,328)" name="Text">
+      <a name="text" val="Bemerkung:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(77,535)" name="Text">
+      <a name="text" val="Die Wahl der Tasten hier verhindern, dass S und R gleichzeitig bedient werden können."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(77,453)" name="Text">
+      <a name="text" val="Für C=0 oder C=1 geschieht nichts."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(77,398)" name="Text">
+      <a name="text" val="Für J=0 und K=1 wird/bleibt Zwischenspeicherung=0."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="5" loc="(100,280)" name="Button">
+      <a name="label" val="Reset"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(77,346)" name="Text">
+      <a name="text" val="Auf steigende Vorderflanke (= positive Vorderflanke) werden die Werte von J und K detektiert."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(77,414)" name="Text">
+      <a name="text" val="Für J=1 und K=0 wird/bleibt Zwischenspeicherung=1."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(77,382)" name="Text">
+      <a name="text" val="Für J=K=1 wird Zwischenspeicherung invertiert."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(100,200)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="~Enable"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(260,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(100,160)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="K"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(77,366)" name="Text">
+      <a name="text" val="Für J=K=0 bleibt Zwischenspeicherung unverändert."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(77,433)" name="Text">
+      <a name="text" val="Auf fallende Hinterflanke wird der zwischengespeicherte Wert an Q ausgegeben."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(100,140)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="5" loc="(100,250)" name="Button">
+      <a name="label" val="Set"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(77,495)" name="Text">
+      <a name="text" val="Damit ist das D-FF sofort enabled."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(260,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(77,520)" name="Text">
+      <a name="text" val="S und R wirken mit höchster Priorität, auch dann wenn das D-FF nicht enabled ist."/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(100,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="J"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+  </circuit>
+  <circuit name="--- FF-ANWENDUNGEN ---">
+    <a name="circuit" val="--- FF-ANWENDUNGEN ---"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+  </circuit>
+  <circuit name="Sample and Hold (state triggered)">
+    <a name="circuit" val="Sample and Hold (state triggered)"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(210,140)" to="(270,140)"/>
+    <wire from="(270,140)" to="(270,340)"/>
+    <wire from="(550,120)" to="(610,120)"/>
+    <wire from="(550,340)" to="(610,340)"/>
+    <wire from="(480,540)" to="(480,550)"/>
+    <wire from="(480,300)" to="(480,310)"/>
+    <wire from="(320,220)" to="(320,230)"/>
+    <wire from="(320,440)" to="(320,450)"/>
+    <wire from="(120,120)" to="(170,120)"/>
+    <wire from="(210,120)" to="(320,120)"/>
+    <wire from="(510,510)" to="(510,530)"/>
+    <wire from="(100,140)" to="(100,160)"/>
+    <wire from="(140,600)" to="(140,620)"/>
+    <wire from="(140,600)" to="(170,600)"/>
+    <wire from="(290,230)" to="(320,230)"/>
+    <wire from="(390,360)" to="(390,470)"/>
+    <wire from="(170,610)" to="(170,650)"/>
+    <wire from="(390,140)" to="(390,250)"/>
+    <wire from="(460,410)" to="(480,410)"/>
+    <wire from="(460,190)" to="(480,190)"/>
+    <wire from="(320,120)" to="(470,120)"/>
+    <wire from="(170,160)" to="(190,160)"/>
+    <wire from="(320,340)" to="(470,340)"/>
+    <wire from="(250,150)" to="(250,450)"/>
+    <wire from="(190,580)" to="(210,580)"/>
+    <wire from="(480,200)" to="(490,200)"/>
+    <wire from="(490,510)" to="(500,510)"/>
+    <wire from="(480,420)" to="(490,420)"/>
+    <wire from="(520,180)" to="(530,180)"/>
+    <wire from="(490,290)" to="(500,290)"/>
+    <wire from="(210,130)" to="(290,130)"/>
+    <wire from="(390,470)" to="(470,470)"/>
+    <wire from="(390,250)" to="(470,250)"/>
+    <wire from="(520,400)" to="(530,400)"/>
+    <wire from="(110,590)" to="(170,590)"/>
+    <wire from="(270,340)" to="(320,340)"/>
+    <wire from="(550,450)" to="(610,450)"/>
+    <wire from="(550,230)" to="(610,230)"/>
+    <wire from="(480,410)" to="(480,420)"/>
+    <wire from="(480,190)" to="(480,200)"/>
+    <wire from="(320,110)" to="(320,120)"/>
+    <wire from="(320,330)" to="(320,340)"/>
+    <wire from="(500,510)" to="(500,530)"/>
+    <wire from="(210,150)" to="(250,150)"/>
+    <wire from="(520,510)" to="(520,530)"/>
+    <wire from="(290,130)" to="(290,230)"/>
+    <wire from="(110,620)" to="(140,620)"/>
+    <wire from="(390,250)" to="(390,360)"/>
+    <wire from="(170,120)" to="(170,160)"/>
+    <wire from="(110,470)" to="(390,470)"/>
+    <wire from="(460,540)" to="(480,540)"/>
+    <wire from="(460,300)" to="(480,300)"/>
+    <wire from="(110,650)" to="(130,650)"/>
+    <wire from="(320,230)" to="(470,230)"/>
+    <wire from="(320,450)" to="(470,450)"/>
+    <wire from="(480,550)" to="(490,550)"/>
+    <wire from="(490,180)" to="(500,180)"/>
+    <wire from="(490,400)" to="(500,400)"/>
+    <wire from="(480,310)" to="(490,310)"/>
+    <wire from="(160,650)" to="(170,650)"/>
+    <wire from="(390,140)" to="(470,140)"/>
+    <wire from="(390,360)" to="(470,360)"/>
+    <wire from="(520,290)" to="(530,290)"/>
+    <wire from="(250,450)" to="(320,450)"/>
+    <wire from="(520,510)" to="(530,510)"/>
+    <comp lib="4" loc="(120,120)" name="Counter">
+      <a name="width" val="4"/>
+      <a name="max" val="0xf"/>
+    </comp>
+    <comp loc="(470,210)" name="Zustandsgesteuertes D-FF (aus Bibl.)"/>
+    <comp lib="0" loc="(490,310)" name="Splitter">
+      <a name="facing" val="north"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+      <a name="appear" val="right"/>
+    </comp>
+    <comp lib="1" loc="(160,650)" name="NOT Gate"/>
+    <comp lib="5" loc="(610,340)" name="LED">
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="Q1"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(460,410)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="3"/>
+      <a name="label" val="Controls"/>
+    </comp>
+    <comp lib="0" loc="(490,550)" name="Splitter">
+      <a name="facing" val="north"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+      <a name="appear" val="right"/>
+    </comp>
+    <comp lib="0" loc="(490,200)" name="Splitter">
+      <a name="facing" val="north"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+      <a name="appear" val="right"/>
+    </comp>
+    <comp lib="0" loc="(100,160)" name="Clock">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="6" loc="(69,283)" name="Text">
+      <a name="text" val="4-Bit Sample &amp; Hold"/>
+      <a name="font" val="SansSerif bold 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(88,498)" name="Text">
+      <a name="text" val="(Halten: Drücken und gedrückt halten)"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(190,160)" name="Splitter">
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+      <a name="bit0" val="3"/>
+      <a name="bit1" val="2"/>
+      <a name="bit2" val="1"/>
+      <a name="bit3" val="0"/>
+    </comp>
+    <comp lib="5" loc="(320,440)" name="LED">
+      <a name="facing" val="south"/>
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="D0"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp loc="(470,100)" name="Zustandsgesteuertes D-FF (aus Bibl.)"/>
+    <comp lib="5" loc="(110,620)" name="Button">
+      <a name="label" val="Set"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="0" loc="(490,420)" name="Splitter">
+      <a name="facing" val="north"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+      <a name="appear" val="right"/>
+    </comp>
+    <comp lib="5" loc="(320,110)" name="LED">
+      <a name="facing" val="south"/>
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="D3"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="5" loc="(320,220)" name="LED">
+      <a name="facing" val="south"/>
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="D2"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(110,650)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="~Enable"/>
+    </comp>
+    <comp lib="5" loc="(610,230)" name="LED">
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="Q2"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp loc="(470,430)" name="Zustandsgesteuertes D-FF (aus Bibl.)"/>
+    <comp lib="0" loc="(460,540)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="3"/>
+      <a name="label" val="Controls"/>
+    </comp>
+    <comp lib="5" loc="(110,590)" name="Button">
+      <a name="label" val="Reset"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="0" loc="(210,580)" name="Tunnel">
+      <a name="width" val="3"/>
+      <a name="label" val="Controls"/>
+    </comp>
+    <comp lib="5" loc="(110,470)" name="Button">
+      <a name="color" val="#2fff27"/>
+      <a name="label" val="Hold "/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="5" loc="(320,330)" name="LED">
+      <a name="facing" val="south"/>
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="D1"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(460,300)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="3"/>
+      <a name="label" val="Controls"/>
+    </comp>
+    <comp lib="0" loc="(190,580)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
+    <comp loc="(470,320)" name="Zustandsgesteuertes D-FF (aus Bibl.)"/>
+    <comp lib="5" loc="(610,120)" name="LED">
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="Q3"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(460,190)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="3"/>
+      <a name="label" val="Controls"/>
+    </comp>
+    <comp lib="5" loc="(610,450)" name="LED">
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="Q0"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+  </circuit>
+  <circuit name="Sample and Hold (edge triggered)">
+    <a name="circuit" val="Sample and Hold (edge triggered)"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(210,140)" to="(270,140)"/>
+    <wire from="(270,140)" to="(270,340)"/>
+    <wire from="(550,120)" to="(610,120)"/>
+    <wire from="(550,340)" to="(610,340)"/>
+    <wire from="(480,520)" to="(480,530)"/>
+    <wire from="(480,300)" to="(480,310)"/>
+    <wire from="(320,220)" to="(320,230)"/>
+    <wire from="(320,440)" to="(320,450)"/>
+    <wire from="(120,120)" to="(170,120)"/>
+    <wire from="(210,120)" to="(320,120)"/>
+    <wire from="(100,140)" to="(100,160)"/>
+    <wire from="(140,600)" to="(140,620)"/>
+    <wire from="(140,600)" to="(170,600)"/>
+    <wire from="(290,230)" to="(320,230)"/>
+    <wire from="(390,360)" to="(390,470)"/>
+    <wire from="(170,610)" to="(170,650)"/>
+    <wire from="(390,140)" to="(390,250)"/>
+    <wire from="(460,410)" to="(480,410)"/>
+    <wire from="(460,190)" to="(480,190)"/>
+    <wire from="(320,120)" to="(470,120)"/>
+    <wire from="(170,160)" to="(190,160)"/>
+    <wire from="(320,340)" to="(470,340)"/>
+    <wire from="(250,150)" to="(250,450)"/>
+    <wire from="(190,580)" to="(210,580)"/>
+    <wire from="(480,200)" to="(490,200)"/>
+    <wire from="(490,510)" to="(500,510)"/>
+    <wire from="(480,420)" to="(490,420)"/>
+    <wire from="(520,180)" to="(530,180)"/>
+    <wire from="(490,290)" to="(500,290)"/>
+    <wire from="(210,130)" to="(290,130)"/>
+    <wire from="(390,470)" to="(470,470)"/>
+    <wire from="(390,250)" to="(470,250)"/>
+    <wire from="(520,400)" to="(530,400)"/>
+    <wire from="(110,590)" to="(170,590)"/>
+    <wire from="(270,340)" to="(320,340)"/>
+    <wire from="(550,450)" to="(610,450)"/>
+    <wire from="(550,230)" to="(610,230)"/>
+    <wire from="(480,410)" to="(480,420)"/>
+    <wire from="(480,190)" to="(480,200)"/>
+    <wire from="(320,110)" to="(320,120)"/>
+    <wire from="(320,330)" to="(320,340)"/>
+    <wire from="(210,150)" to="(250,150)"/>
+    <wire from="(290,130)" to="(290,230)"/>
+    <wire from="(110,620)" to="(140,620)"/>
+    <wire from="(390,250)" to="(390,360)"/>
+    <wire from="(170,120)" to="(170,160)"/>
+    <wire from="(110,470)" to="(390,470)"/>
+    <wire from="(460,300)" to="(480,300)"/>
+    <wire from="(460,520)" to="(480,520)"/>
+    <wire from="(110,650)" to="(130,650)"/>
+    <wire from="(320,230)" to="(470,230)"/>
+    <wire from="(320,450)" to="(470,450)"/>
+    <wire from="(490,180)" to="(500,180)"/>
+    <wire from="(490,400)" to="(500,400)"/>
+    <wire from="(480,310)" to="(490,310)"/>
+    <wire from="(480,530)" to="(490,530)"/>
+    <wire from="(160,650)" to="(170,650)"/>
+    <wire from="(390,140)" to="(470,140)"/>
+    <wire from="(390,360)" to="(470,360)"/>
+    <wire from="(520,290)" to="(530,290)"/>
+    <wire from="(250,450)" to="(320,450)"/>
+    <wire from="(520,510)" to="(530,510)"/>
+    <comp lib="5" loc="(610,120)" name="LED">
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="Q3"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="5" loc="(610,230)" name="LED">
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="Q2"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(460,190)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="3"/>
+      <a name="label" val="Controls"/>
+    </comp>
+    <comp loc="(470,100)" name="Positiv 1-flankengetriggertes D-FF"/>
+    <comp lib="0" loc="(460,520)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="3"/>
+      <a name="label" val="Controls"/>
+    </comp>
+    <comp loc="(470,210)" name="Positiv 1-flankengetriggertes D-FF"/>
+    <comp lib="5" loc="(320,330)" name="LED">
+      <a name="facing" val="south"/>
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="D1"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(490,310)" name="Splitter">
+      <a name="facing" val="north"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+      <a name="appear" val="right"/>
+    </comp>
+    <comp loc="(470,320)" name="Positiv 1-flankengetriggertes D-FF"/>
+    <comp lib="5" loc="(610,450)" name="LED">
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="Q0"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="5" loc="(610,340)" name="LED">
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="Q1"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="5" loc="(320,440)" name="LED">
+      <a name="facing" val="south"/>
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="D0"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(190,580)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
+    <comp lib="5" loc="(320,110)" name="LED">
+      <a name="facing" val="south"/>
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="D3"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(460,410)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="3"/>
+      <a name="label" val="Controls"/>
+    </comp>
+    <comp lib="0" loc="(490,200)" name="Splitter">
+      <a name="facing" val="north"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+      <a name="appear" val="right"/>
+    </comp>
+    <comp lib="0" loc="(190,160)" name="Splitter">
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+      <a name="bit0" val="3"/>
+      <a name="bit1" val="2"/>
+      <a name="bit2" val="1"/>
+      <a name="bit3" val="0"/>
+    </comp>
+    <comp lib="6" loc="(69,283)" name="Text">
+      <a name="text" val="4-Bit Hold"/>
+      <a name="font" val="SansSerif bold 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(89,500)" name="Text">
+      <a name="text" val="(Ein- und Auslesen auf pos. Flanke)"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(490,420)" name="Splitter">
+      <a name="facing" val="north"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+      <a name="appear" val="right"/>
+    </comp>
+    <comp loc="(470,430)" name="Positiv 1-flankengetriggertes D-FF"/>
+    <comp lib="1" loc="(160,650)" name="NOT Gate"/>
+    <comp lib="0" loc="(110,650)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="~Enable"/>
+    </comp>
+    <comp lib="4" loc="(120,120)" name="Counter">
+      <a name="width" val="4"/>
+      <a name="max" val="0xf"/>
+    </comp>
+    <comp lib="0" loc="(490,530)" name="Splitter">
+      <a name="facing" val="north"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+      <a name="appear" val="right"/>
+    </comp>
+    <comp lib="0" loc="(460,300)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="3"/>
+      <a name="label" val="Controls"/>
+    </comp>
+    <comp lib="5" loc="(110,590)" name="Button">
+      <a name="label" val="Reset"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="5" loc="(320,220)" name="LED">
+      <a name="facing" val="south"/>
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="D2"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(210,580)" name="Tunnel">
+      <a name="width" val="3"/>
+      <a name="label" val="Controls"/>
+    </comp>
+    <comp loc="(80,470)" name="onPosEdge"/>
+    <comp lib="5" loc="(110,470)" name="Button">
+      <a name="color" val="#2fff27"/>
+      <a name="label" val="Hold    "/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(100,160)" name="Clock">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="5" loc="(110,620)" name="Button">
+      <a name="label" val="Set"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+  </circuit>
+  <circuit name="Sample and Hold (double edge triggered)">
+    <a name="circuit" val="Sample and Hold (double edge triggered)"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(210,140)" to="(270,140)"/>
+    <wire from="(270,140)" to="(270,340)"/>
+    <wire from="(550,120)" to="(610,120)"/>
+    <wire from="(550,340)" to="(610,340)"/>
+    <wire from="(480,520)" to="(480,530)"/>
+    <wire from="(480,300)" to="(480,310)"/>
+    <wire from="(320,220)" to="(320,230)"/>
+    <wire from="(320,440)" to="(320,450)"/>
+    <wire from="(120,120)" to="(170,120)"/>
+    <wire from="(210,120)" to="(320,120)"/>
+    <wire from="(100,140)" to="(100,160)"/>
+    <wire from="(140,600)" to="(140,620)"/>
+    <wire from="(140,600)" to="(170,600)"/>
+    <wire from="(290,230)" to="(320,230)"/>
+    <wire from="(390,360)" to="(390,470)"/>
+    <wire from="(170,610)" to="(170,650)"/>
+    <wire from="(390,140)" to="(390,250)"/>
+    <wire from="(460,410)" to="(480,410)"/>
+    <wire from="(460,190)" to="(480,190)"/>
+    <wire from="(320,120)" to="(470,120)"/>
+    <wire from="(170,160)" to="(190,160)"/>
+    <wire from="(320,340)" to="(470,340)"/>
+    <wire from="(250,150)" to="(250,450)"/>
+    <wire from="(190,580)" to="(210,580)"/>
+    <wire from="(480,200)" to="(490,200)"/>
+    <wire from="(490,510)" to="(500,510)"/>
+    <wire from="(480,420)" to="(490,420)"/>
+    <wire from="(520,180)" to="(530,180)"/>
+    <wire from="(490,290)" to="(500,290)"/>
+    <wire from="(210,130)" to="(290,130)"/>
+    <wire from="(390,470)" to="(470,470)"/>
+    <wire from="(390,250)" to="(470,250)"/>
+    <wire from="(520,400)" to="(530,400)"/>
+    <wire from="(110,590)" to="(170,590)"/>
+    <wire from="(270,340)" to="(320,340)"/>
+    <wire from="(550,450)" to="(610,450)"/>
+    <wire from="(550,230)" to="(610,230)"/>
+    <wire from="(480,410)" to="(480,420)"/>
+    <wire from="(480,190)" to="(480,200)"/>
+    <wire from="(320,110)" to="(320,120)"/>
+    <wire from="(320,330)" to="(320,340)"/>
+    <wire from="(210,150)" to="(250,150)"/>
+    <wire from="(290,130)" to="(290,230)"/>
+    <wire from="(110,620)" to="(140,620)"/>
+    <wire from="(390,250)" to="(390,360)"/>
+    <wire from="(170,120)" to="(170,160)"/>
+    <wire from="(110,470)" to="(390,470)"/>
+    <wire from="(460,300)" to="(480,300)"/>
+    <wire from="(460,520)" to="(480,520)"/>
+    <wire from="(110,650)" to="(130,650)"/>
+    <wire from="(320,230)" to="(470,230)"/>
+    <wire from="(320,450)" to="(470,450)"/>
+    <wire from="(490,180)" to="(500,180)"/>
+    <wire from="(490,400)" to="(500,400)"/>
+    <wire from="(480,310)" to="(490,310)"/>
+    <wire from="(480,530)" to="(490,530)"/>
+    <wire from="(160,650)" to="(170,650)"/>
+    <wire from="(390,140)" to="(470,140)"/>
+    <wire from="(390,360)" to="(470,360)"/>
+    <wire from="(520,290)" to="(530,290)"/>
+    <wire from="(250,450)" to="(320,450)"/>
+    <wire from="(520,510)" to="(530,510)"/>
+    <comp loc="(470,210)" name="Pos-Neg 2-flankengetriggertes D-FF"/>
+    <comp lib="5" loc="(610,120)" name="LED">
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="Q3"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(460,410)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="3"/>
+      <a name="label" val="Controls"/>
+    </comp>
+    <comp loc="(70,470)" name="onPosThenNegEdge"/>
+    <comp lib="0" loc="(460,300)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="3"/>
+      <a name="label" val="Controls"/>
+    </comp>
+    <comp lib="1" loc="(160,650)" name="NOT Gate"/>
+    <comp lib="6" loc="(89,500)" name="Text">
+      <a name="text" val="(Einlesen auf pos. Flanke)"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(190,160)" name="Splitter">
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+      <a name="bit0" val="3"/>
+      <a name="bit1" val="2"/>
+      <a name="bit2" val="1"/>
+      <a name="bit3" val="0"/>
+    </comp>
+    <comp lib="5" loc="(610,340)" name="LED">
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="Q1"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp loc="(470,100)" name="Pos-Neg 2-flankengetriggertes D-FF"/>
+    <comp lib="5" loc="(110,470)" name="Button">
+      <a name="color" val="#2fff27"/>
+      <a name="label" val="Hold         "/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="5" loc="(320,330)" name="LED">
+      <a name="facing" val="south"/>
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="D1"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(490,310)" name="Splitter">
+      <a name="facing" val="north"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+      <a name="appear" val="right"/>
+    </comp>
+    <comp lib="5" loc="(320,440)" name="LED">
+      <a name="facing" val="south"/>
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="D0"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(110,650)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="~Enable"/>
+    </comp>
+    <comp lib="0" loc="(210,580)" name="Tunnel">
+      <a name="width" val="3"/>
+      <a name="label" val="Controls"/>
+    </comp>
+    <comp loc="(470,430)" name="Pos-Neg 2-flankengetriggertes D-FF"/>
+    <comp lib="6" loc="(69,283)" name="Text">
+      <a name="text" val="4-Bit Hold"/>
+      <a name="font" val="SansSerif bold 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="5" loc="(110,590)" name="Button">
+      <a name="label" val="Reset"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="0" loc="(490,200)" name="Splitter">
+      <a name="facing" val="north"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+      <a name="appear" val="right"/>
+    </comp>
+    <comp lib="5" loc="(610,450)" name="LED">
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="Q0"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(460,190)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="3"/>
+      <a name="label" val="Controls"/>
+    </comp>
+    <comp lib="0" loc="(460,520)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="3"/>
+      <a name="label" val="Controls"/>
+    </comp>
+    <comp lib="5" loc="(320,110)" name="LED">
+      <a name="facing" val="south"/>
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="D3"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="4" loc="(120,120)" name="Counter">
+      <a name="width" val="4"/>
+      <a name="max" val="0xf"/>
+    </comp>
+    <comp lib="5" loc="(110,620)" name="Button">
+      <a name="label" val="Set"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="5" loc="(320,220)" name="LED">
+      <a name="facing" val="south"/>
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="D2"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="5" loc="(610,230)" name="LED">
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="Q2"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(100,160)" name="Clock">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="6" loc="(90,517)" name="Text">
+      <a name="text" val="(Ausgeben auf neg. Flanke)"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(490,530)" name="Splitter">
+      <a name="facing" val="north"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+      <a name="appear" val="right"/>
+    </comp>
+    <comp lib="0" loc="(490,420)" name="Splitter">
+      <a name="facing" val="north"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+      <a name="appear" val="right"/>
+    </comp>
+    <comp loc="(470,320)" name="Pos-Neg 2-flankengetriggertes D-FF"/>
+    <comp lib="0" loc="(190,580)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
+  </circuit>
+  <circuit name="Asynchroner Modulo-8-Zähler">
+    <a name="circuit" val="Asynchroner Modulo-8-Zähler"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(270,150)" to="(330,150)"/>
+    <wire from="(450,150)" to="(510,150)"/>
+    <wire from="(390,190)" to="(390,260)"/>
+    <wire from="(90,150)" to="(150,150)"/>
+    <wire from="(210,190)" to="(210,260)"/>
+    <wire from="(270,150)" to="(270,280)"/>
+    <wire from="(90,260)" to="(210,260)"/>
+    <wire from="(390,260)" to="(570,260)"/>
+    <wire from="(450,150)" to="(450,290)"/>
+    <wire from="(630,300)" to="(690,300)"/>
+    <wire from="(570,190)" to="(570,260)"/>
+    <wire from="(210,260)" to="(390,260)"/>
+    <wire from="(710,180)" to="(710,270)"/>
+    <wire from="(270,130)" to="(270,150)"/>
+    <wire from="(350,190)" to="(350,210)"/>
+    <wire from="(590,130)" to="(630,130)"/>
+    <wire from="(450,130)" to="(450,150)"/>
+    <wire from="(170,190)" to="(170,210)"/>
+    <wire from="(450,290)" to="(690,290)"/>
+    <wire from="(270,280)" to="(690,280)"/>
+    <wire from="(450,290)" to="(450,320)"/>
+    <wire from="(230,130)" to="(270,130)"/>
+    <wire from="(530,190)" to="(530,210)"/>
+    <wire from="(630,300)" to="(630,320)"/>
+    <wire from="(410,130)" to="(450,130)"/>
+    <wire from="(140,210)" to="(170,210)"/>
+    <wire from="(630,130)" to="(630,300)"/>
+    <wire from="(500,210)" to="(530,210)"/>
+    <wire from="(320,210)" to="(350,210)"/>
+    <wire from="(270,280)" to="(270,320)"/>
+    <wire from="(500,130)" to="(510,130)"/>
+    <wire from="(500,170)" to="(510,170)"/>
+    <wire from="(320,170)" to="(330,170)"/>
+    <wire from="(320,130)" to="(330,130)"/>
+    <wire from="(140,170)" to="(150,170)"/>
+    <wire from="(140,130)" to="(150,130)"/>
+    <comp lib="5" loc="(450,320)" name="LED">
+      <a name="facing" val="north"/>
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="Q1"/>
+      <a name="labelloc" val="south"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(500,170)" name="Constant"/>
+    <comp lib="0" loc="(90,150)" name="Clock">
+      <a name="label" val="CP"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(140,130)" name="Constant"/>
+    <comp loc="(510,110)" name="Negativ 1-flankengetriggertes JK-FF"/>
+    <comp lib="0" loc="(320,210)" name="Constant"/>
+    <comp loc="(330,110)" name="Negativ 1-flankengetriggertes JK-FF"/>
+    <comp lib="5" loc="(270,320)" name="LED">
+      <a name="facing" val="north"/>
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="Q0=LSB"/>
+      <a name="labelloc" val="south"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(90,260)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="R"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(500,130)" name="Constant"/>
+    <comp lib="0" loc="(140,210)" name="Constant"/>
+    <comp lib="0" loc="(320,170)" name="Constant"/>
+    <comp lib="0" loc="(190,190)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="6" loc="(69,50)" name="Text">
+      <a name="text" val="Asynchroner Modulo-8-Zähler (vorwärts)"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp loc="(150,110)" name="Negativ 1-flankengetriggertes JK-FF"/>
+    <comp lib="0" loc="(550,190)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(140,170)" name="Constant"/>
+    <comp lib="0" loc="(320,130)" name="Constant"/>
+    <comp lib="5" loc="(710,180)" name="Hex Digit Display"/>
+    <comp lib="0" loc="(500,210)" name="Constant"/>
+    <comp lib="0" loc="(690,310)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="5" loc="(630,320)" name="LED">
+      <a name="facing" val="north"/>
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="Q2=MSB"/>
+      <a name="labelloc" val="south"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(710,270)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+    </comp>
+    <comp lib="0" loc="(370,190)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+  </circuit>
+  <circuit name="Asynchroner Modulo-10-Zähler">
+    <a name="circuit" val="Asynchroner Modulo-10-Zähler"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(330,190)" to="(330,210)"/>
+    <wire from="(490,190)" to="(490,210)"/>
+    <wire from="(740,310)" to="(780,310)"/>
+    <wire from="(170,190)" to="(170,210)"/>
+    <wire from="(130,310)" to="(130,330)"/>
+    <wire from="(130,330)" to="(420,330)"/>
+    <wire from="(650,190)" to="(650,210)"/>
+    <wire from="(180,300)" to="(210,300)"/>
+    <wire from="(230,130)" to="(260,130)"/>
+    <wire from="(210,260)" to="(370,260)"/>
+    <wire from="(370,260)" to="(530,260)"/>
+    <wire from="(390,130)" to="(420,130)"/>
+    <wire from="(710,130)" to="(740,130)"/>
+    <wire from="(530,260)" to="(690,260)"/>
+    <wire from="(550,130)" to="(580,130)"/>
+    <wire from="(580,300)" to="(780,300)"/>
+    <wire from="(110,290)" to="(110,350)"/>
+    <wire from="(370,190)" to="(370,260)"/>
+    <wire from="(210,190)" to="(210,260)"/>
+    <wire from="(580,150)" to="(630,150)"/>
+    <wire from="(260,150)" to="(260,280)"/>
+    <wire from="(420,150)" to="(470,150)"/>
+    <wire from="(110,350)" to="(740,350)"/>
+    <wire from="(420,150)" to="(420,290)"/>
+    <wire from="(260,150)" to="(310,150)"/>
+    <wire from="(690,190)" to="(690,260)"/>
+    <wire from="(530,190)" to="(530,260)"/>
+    <wire from="(580,300)" to="(580,370)"/>
+    <wire from="(100,150)" to="(150,150)"/>
+    <wire from="(420,130)" to="(420,150)"/>
+    <wire from="(800,180)" to="(800,270)"/>
+    <wire from="(260,130)" to="(260,150)"/>
+    <wire from="(110,290)" to="(150,290)"/>
+    <wire from="(580,130)" to="(580,150)"/>
+    <wire from="(260,280)" to="(260,370)"/>
+    <wire from="(580,150)" to="(580,300)"/>
+    <wire from="(420,290)" to="(780,290)"/>
+    <wire from="(740,350)" to="(740,370)"/>
+    <wire from="(140,210)" to="(170,210)"/>
+    <wire from="(740,310)" to="(740,350)"/>
+    <wire from="(460,210)" to="(490,210)"/>
+    <wire from="(310,210)" to="(330,210)"/>
+    <wire from="(210,260)" to="(210,300)"/>
+    <wire from="(620,210)" to="(650,210)"/>
+    <wire from="(130,310)" to="(150,310)"/>
+    <wire from="(420,290)" to="(420,330)"/>
+    <wire from="(420,330)" to="(420,370)"/>
+    <wire from="(460,170)" to="(470,170)"/>
+    <wire from="(460,130)" to="(470,130)"/>
+    <wire from="(300,210)" to="(310,210)"/>
+    <wire from="(300,130)" to="(310,130)"/>
+    <wire from="(300,170)" to="(310,170)"/>
+    <wire from="(140,170)" to="(150,170)"/>
+    <wire from="(140,130)" to="(150,130)"/>
+    <wire from="(260,280)" to="(780,280)"/>
+    <wire from="(740,130)" to="(740,310)"/>
+    <wire from="(620,170)" to="(630,170)"/>
+    <wire from="(620,130)" to="(630,130)"/>
+    <comp loc="(500,350)" name="Arrow">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(350,190)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="5" loc="(260,370)" name="LED">
+      <a name="facing" val="north"/>
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="Q0=LSB"/>
+      <a name="labelloc" val="south"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(190,190)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp loc="(150,110)" name="Negativ 1-flankengetriggertes JK-FF"/>
+    <comp lib="5" loc="(580,370)" name="LED">
+      <a name="facing" val="north"/>
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="Q2"/>
+      <a name="labelloc" val="south"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(620,210)" name="Constant"/>
+    <comp lib="6" loc="(69,50)" name="Text">
+      <a name="text" val="Asynchroner Modulo-10-Zähler (vorwärts)"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp loc="(470,110)" name="Negativ 1-flankengetriggertes JK-FF"/>
+    <comp lib="5" loc="(420,370)" name="LED">
+      <a name="facing" val="north"/>
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="Q1"/>
+      <a name="labelloc" val="south"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(460,170)" name="Constant"/>
+    <comp loc="(300,330)" name="Arrow">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(460,210)" name="Constant"/>
+    <comp lib="0" loc="(140,170)" name="Constant"/>
+    <comp lib="0" loc="(460,130)" name="Constant"/>
+    <comp lib="0" loc="(140,210)" name="Constant"/>
+    <comp lib="0" loc="(140,130)" name="Constant"/>
+    <comp lib="0" loc="(800,270)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+    </comp>
+    <comp lib="0" loc="(510,190)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="1" loc="(180,300)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="5" loc="(800,180)" name="Hex Digit Display"/>
+    <comp lib="0" loc="(300,130)" name="Constant"/>
+    <comp lib="5" loc="(740,370)" name="LED">
+      <a name="facing" val="north"/>
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="Q3=MSB"/>
+      <a name="labelloc" val="south"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(670,190)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp loc="(630,110)" name="Negativ 1-flankengetriggertes JK-FF"/>
+    <comp lib="0" loc="(620,170)" name="Constant"/>
+    <comp lib="0" loc="(100,150)" name="Clock">
+      <a name="label" val="CP"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp loc="(310,110)" name="Negativ 1-flankengetriggertes JK-FF"/>
+    <comp lib="0" loc="(620,130)" name="Constant"/>
+    <comp lib="0" loc="(310,210)" name="Constant"/>
+    <comp lib="0" loc="(300,170)" name="Constant"/>
+  </circuit>
+  <circuit name="--- HILFSBLÄTTER ---">
+    <a name="circuit" val="--- HILFSBLÄTTER ---"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+  </circuit>
+  <circuit name="SN Box">
+    <a name="circuit" val="SN Box"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <rect fill="none" height="130" stroke="#000000" stroke-width="2" width="180" x="50" y="50"/>
+      <circ-anchor facing="east" height="6" width="6" x="47" y="47"/>
+    </appear>
+  </circuit>
+  <circuit name="Delay Box">
+    <a name="circuit" val="Delay Box"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <rect fill="none" height="30" stroke="#000000" stroke-width="2" width="70" x="50" y="45"/>
+      <polyline fill="none" points="140,50 120,60" stroke="#000000"/>
+      <polyline fill="none" points="140,70 120,60" stroke="#000000"/>
+      <circ-port height="8" pin="160,180" width="8" x="116" y="56"/>
+      <circ-port height="10" pin="210,180" width="10" x="45" y="55"/>
+      <circ-anchor facing="east" height="6" width="6" x="47" y="47"/>
+    </appear>
+    <wire from="(160,180)" to="(210,180)"/>
+    <comp lib="0" loc="(210,180)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(160,180)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+  </circuit>
+  <circuit name="onPosEdge">
+    <a name="circuit" val="onPosEdge"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <polyline fill="none" points="80,50 80,70" stroke="#000000"/>
+      <polyline fill="none" points="80,50 84,57" stroke="#000000"/>
+      <polyline fill="none" points="80,50 75,57" stroke="#000000"/>
+      <circ-anchor facing="east" height="6" width="6" x="77" y="57"/>
+    </appear>
+    <comp lib="6" loc="(62,93)" name="Text">
+      <a name="text" val="Positive Edge Symbol in Design View"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+  </circuit>
+  <circuit name="onPosThenNegEdge">
+    <a name="circuit" val="onPosThenNegEdge"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <polyline fill="none" points="80,50 84,57" stroke="#000000"/>
+      <polyline fill="none" points="80,50 80,70" stroke="#000000"/>
+      <polyline fill="none" points="80,50 75,57" stroke="#000000"/>
+      <polyline fill="none" points="105,63 100,70" stroke="#000000"/>
+      <polyline fill="none" points="95,63 100,70" stroke="#000000"/>
+      <polyline fill="none" points="100,50 100,69" stroke="#000000"/>
+      <polyline fill="none" points="80,50 100,50" stroke="#000000"/>
+      <circ-anchor facing="east" height="6" width="6" x="87" y="57"/>
+    </appear>
+    <comp lib="6" loc="(62,93)" name="Text">
+      <a name="text" val="Positive and Negative Edge Symbol in Design View"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+  </circuit>
+  <circuit name="Arrow">
+    <a name="circuit" val="Arrow"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <polyline fill="none" points="90,60 110,70" stroke="#000000"/>
+      <polyline fill="none" points="110,70 90,80" stroke="#000000"/>
+      <circ-anchor facing="east" height="6" width="6" x="97" y="67"/>
+    </appear>
+  </circuit>
+  <circuit name="RS-FF (aus Bibliothek)">
+    <a name="circuit" val="RS-FF (aus Bibliothek)"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="87" y="125">R</text>
+      <text font-family="SansSerif" font-size="16" font-weight="bold" text-anchor="middle" x="121" y="104">RS-FF</text>
+      <rect fill="none" height="80" stroke="#000000" stroke-width="2" width="80" x="80" y="60"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="148" y="84">Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="88" y="85">S</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="145" y="124">~Q</text>
+      <circ-port height="8" pin="90,160" width="8" x="76" y="76"/>
+      <circ-port height="8" pin="90,190" width="8" x="76" y="116"/>
+      <circ-port height="10" pin="250,100" width="10" x="155" y="75"/>
+      <circ-port height="10" pin="250,120" width="10" x="155" y="115"/>
+      <circ-anchor facing="east" height="6" width="6" x="77" y="57"/>
+    </appear>
+    <wire from="(140,110)" to="(150,110)"/>
+    <wire from="(190,100)" to="(250,100)"/>
+    <wire from="(190,120)" to="(250,120)"/>
+    <wire from="(90,190)" to="(180,190)"/>
+    <wire from="(170,130)" to="(170,140)"/>
+    <wire from="(90,160)" to="(160,160)"/>
+    <wire from="(160,130)" to="(160,160)"/>
+    <wire from="(180,130)" to="(180,190)"/>
+    <comp lib="0" loc="(150,120)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(250,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(250,100)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(150,100)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(90,190)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="R"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(90,160)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="4" loc="(190,100)" name="S-R Flip-Flop">
+      <a name="trigger" val="low"/>
+    </comp>
+    <comp lib="0" loc="(140,110)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(170,140)" name="Constant">
+      <a name="facing" val="north"/>
+    </comp>
+  </circuit>
+  <circuit name="Zustandsgesteuertes D-FF (Eigenbau)">
+    <a name="circuit" val="Zustandsgesteuertes D-FF (Eigenbau)"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <circ-port height="8" pin="70,60" width="8" x="46" y="56"/>
+      <circ-port height="8" pin="70,230" width="8" x="46" y="66"/>
+      <circ-port height="8" pin="70,340" width="8" x="46" y="76"/>
+      <circ-port height="8" pin="70,430" width="8" x="46" y="86"/>
+      <circ-port height="10" pin="410,100" width="10" x="75" y="55"/>
+      <circ-port height="10" pin="410,190" width="10" x="75" y="65"/>
+      <circ-port height="10" pin="410,340" width="10" x="75" y="75"/>
+      <circ-port height="10" pin="410,400" width="10" x="75" y="85"/>
+      <circ-anchor facing="east" height="6" width="6" x="77" y="57"/>
+    </appear>
+    <wire from="(100,100)" to="(100,230)"/>
+    <wire from="(120,120)" to="(120,190)"/>
+    <wire from="(350,190)" to="(400,190)"/>
+    <wire from="(360,400)" to="(410,400)"/>
+    <wire from="(290,340)" to="(410,340)"/>
+    <wire from="(260,150)" to="(260,170)"/>
+    <wire from="(260,150)" to="(370,150)"/>
+    <wire from="(200,340)" to="(200,360)"/>
+    <wire from="(70,430)" to="(240,430)"/>
+    <wire from="(260,120)" to="(260,140)"/>
+    <wire from="(100,230)" to="(140,230)"/>
+    <wire from="(100,100)" to="(140,100)"/>
+    <wire from="(290,370)" to="(290,400)"/>
+    <wire from="(290,340)" to="(290,370)"/>
+    <wire from="(290,400)" to="(330,400)"/>
+    <wire from="(120,120)" to="(220,120)"/>
+    <wire from="(370,100)" to="(410,100)"/>
+    <wire from="(200,360)" to="(230,360)"/>
+    <wire from="(70,230)" to="(100,230)"/>
+    <wire from="(70,340)" to="(100,340)"/>
+    <wire from="(200,210)" to="(290,210)"/>
+    <wire from="(200,340)" to="(290,340)"/>
+    <wire from="(260,120)" to="(290,120)"/>
+    <wire from="(260,370)" to="(290,370)"/>
+    <wire from="(260,170)" to="(290,170)"/>
+    <wire from="(100,340)" to="(100,380)"/>
+    <wire from="(350,100)" to="(370,100)"/>
+    <wire from="(220,80)" to="(220,120)"/>
+    <wire from="(240,390)" to="(240,430)"/>
+    <wire from="(120,190)" to="(140,190)"/>
+    <wire from="(200,80)" to="(220,80)"/>
+    <wire from="(260,140)" to="(400,140)"/>
+    <wire from="(400,190)" to="(410,190)"/>
+    <wire from="(400,140)" to="(400,190)"/>
+    <wire from="(370,100)" to="(370,150)"/>
+    <wire from="(220,80)" to="(290,80)"/>
+    <wire from="(70,60)" to="(140,60)"/>
+    <wire from="(100,380)" to="(230,380)"/>
+    <comp lib="6" loc="(49,40)" name="Text">
+      <a name="text" val="Latch mit Nand realisiert"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="2" loc="(260,370)" name="Multiplexer">
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(70,340)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(410,340)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="1" loc="(200,80)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(350,100)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(49,319)" name="Text">
+      <a name="text" val="Latch mit MUX realisiert"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(45,87)" name="Text">
+      <a name="text" val="Data"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="1" loc="(350,190)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(504,267)" name="Text">
+      <a name="text" val="Logisim tut sich schwer mit Rückkopplungen,"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(410,100)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(70,60)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(410,190)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(45,367)" name="Text">
+      <a name="text" val="Data"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(503,284)" name="Text">
+      <a name="text" val="daher bei Error-Meldungen vorerst C zwei-"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(47,458)" name="Text">
+      <a name="text" val="~EnableLatching"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(503,300)" name="Text">
+      <a name="text" val="mal betätigen (on - off)"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(70,430)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(70,230)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(48,258)" name="Text">
+      <a name="text" val="~EnableLatching"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(419,40)" name="Text">
+      <a name="text" val="Zustandsgesteuertes D-FF"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="1" loc="(200,210)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(360,400)" name="NOT Gate"/>
+    <comp lib="6" loc="(504,251)" name="Text">
+      <a name="text" val="Bemerkung:"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(410,400)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(419,59)" name="Text">
+      <a name="text" val="(D für Delay)"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+  </circuit>
+  <circuit name="Zustandsgesteuertes D-FF reduziert (aus Bibl.)">
+    <a name="circuit" val="Zustandsgesteuertes D-FF reduziert (aus Bibl.)"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <text font-family="SansSerif" font-size="16" font-weight="bold" text-anchor="middle" x="120" y="103">D-FF</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="145" y="124">~Q</text>
+      <rect fill="none" height="80" stroke="#000000" stroke-width="2" width="80" x="80" y="60"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="148" y="84">Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="88" y="85">D</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="87" y="105">C</text>
+      <circ-port height="8" pin="130,110" width="8" x="76" y="96"/>
+      <circ-port height="8" pin="130,130" width="8" x="76" y="76"/>
+      <circ-port height="10" pin="280,110" width="10" x="155" y="75"/>
+      <circ-port height="10" pin="280,130" width="10" x="155" y="115"/>
+      <circ-anchor facing="east" height="6" width="6" x="77" y="57"/>
+    </appear>
+    <wire from="(130,110)" to="(200,110)"/>
+    <wire from="(130,130)" to="(200,130)"/>
+    <wire from="(210,140)" to="(210,150)"/>
+    <wire from="(230,140)" to="(230,150)"/>
+    <wire from="(240,110)" to="(280,110)"/>
+    <wire from="(240,130)" to="(280,130)"/>
+    <wire from="(220,140)" to="(220,170)"/>
+    <comp lib="0" loc="(130,130)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(280,130)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="4" loc="(240,110)" name="D Flip-Flop">
+      <a name="trigger" val="high"/>
+    </comp>
+    <comp lib="0" loc="(220,170)" name="Constant">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(210,150)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(280,110)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(230,150)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="6" loc="(49,40)" name="Text">
+      <a name="text" val="D-FF aus Logisim-Bibliothek (Property: H-Niveau)"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(130,110)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+  </circuit>
+  <circuit name="Zustandsgesteuertes D-FF (aus Bibl.)">
+    <a name="circuit" val="Zustandsgesteuertes D-FF (aus Bibl.)"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="90" y="85">D</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="140" y="136">R</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="120" y="136">S</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="145" y="124">~Q</text>
+      <rect fill="none" height="80" stroke="#000000" stroke-width="2" width="80" x="80" y="60"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="148" y="84">Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="100" y="136">En</text>
+      <text font-family="SansSerif" font-size="16" font-weight="bold" text-anchor="middle" x="121" y="105">D-FF</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="89" y="104">C</text>
+      <circ-port height="8" pin="130,110" width="8" x="76" y="96"/>
+      <circ-port height="8" pin="130,130" width="8" x="76" y="76"/>
+      <circ-port height="8" pin="130,160" width="8" x="116" y="136"/>
+      <circ-port height="8" pin="130,190" width="8" x="96" y="136"/>
+      <circ-port height="8" pin="130,220" width="8" x="136" y="136"/>
+      <circ-port height="10" pin="280,110" width="10" x="155" y="75"/>
+      <circ-port height="10" pin="280,130" width="10" x="155" y="115"/>
+      <circ-anchor facing="east" height="6" width="6" x="77" y="57"/>
+    </appear>
+    <wire from="(220,140)" to="(220,190)"/>
+    <wire from="(130,160)" to="(210,160)"/>
+    <wire from="(230,140)" to="(230,220)"/>
+    <wire from="(130,190)" to="(220,190)"/>
+    <wire from="(210,140)" to="(210,160)"/>
+    <wire from="(130,130)" to="(200,130)"/>
+    <wire from="(240,110)" to="(280,110)"/>
+    <wire from="(240,130)" to="(280,130)"/>
+    <wire from="(130,220)" to="(230,220)"/>
+    <wire from="(180,110)" to="(200,110)"/>
+    <wire from="(130,110)" to="(150,110)"/>
+    <comp lib="0" loc="(130,110)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(280,130)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="1" loc="(180,110)" name="NOT Gate"/>
+    <comp lib="0" loc="(280,110)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(130,130)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(130,160)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(49,40)" name="Text">
+      <a name="text" val="D-FF aus Logisim-Bibliothek (Property: L-Niveau)"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(130,190)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Enable"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(130,220)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="R"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="4" loc="(240,110)" name="D Flip-Flop">
+      <a name="trigger" val="low"/>
+    </comp>
+  </circuit>
+  <circuit name="Positiv 1-flankengetriggertes D-FF ohne Hilfseingänge">
+    <a name="circuit" val="Positiv 1-flankengetriggertes D-FF ohne Hilfseingänge"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <polyline fill="none" points="110,90 110,110" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="145" y="124">~Q</text>
+      <text font-family="SansSerif" font-size="16" font-weight="bold" text-anchor="middle" x="120" y="79">D-FF</text>
+      <polyline fill="none" points="110,90 105,97" stroke="#000000"/>
+      <rect fill="none" height="80" stroke="#000000" stroke-width="2" width="80" x="80" y="60"/>
+      <polyline fill="none" points="110,90 115,97" stroke="#000000"/>
+      <polyline fill="none" points="81,93 99,100" stroke="#000000"/>
+      <polyline fill="none" points="99,100 80,107" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="148" y="84">Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="89" y="84">D</text>
+      <circ-port height="8" pin="120,110" width="8" x="76" y="96"/>
+      <circ-port height="8" pin="120,130" width="8" x="76" y="76"/>
+      <circ-port height="10" pin="240,110" width="10" x="155" y="75"/>
+      <circ-port height="10" pin="240,130" width="10" x="155" y="115"/>
+      <circ-anchor facing="east" height="6" width="6" x="77" y="57"/>
+    </appear>
+    <wire from="(190,140)" to="(190,150)"/>
+    <wire from="(170,140)" to="(170,150)"/>
+    <wire from="(120,110)" to="(160,110)"/>
+    <wire from="(120,130)" to="(160,130)"/>
+    <wire from="(200,110)" to="(240,110)"/>
+    <wire from="(200,130)" to="(240,130)"/>
+    <wire from="(180,140)" to="(180,170)"/>
+    <comp lib="0" loc="(170,150)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(180,170)" name="Constant">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(240,130)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="4" loc="(200,110)" name="D Flip-Flop"/>
+    <comp lib="0" loc="(120,130)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(190,150)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(120,110)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(240,110)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(49,40)" name="Text">
+      <a name="text" val="D-FF aus Logisim-Bibliothek (Property: Steigende Flanke)"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+  </circuit>
+  <circuit name="Positiv 1-flankengetriggertes D-FF">
+    <a name="circuit" val="Positiv 1-flankengetriggertes D-FF"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="west"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <rect fill="none" height="80" stroke="#000000" stroke-width="2" width="80" x="80" y="60"/>
+      <text font-family="SansSerif" font-size="16" font-weight="bold" text-anchor="middle" x="120" y="79">D-FF</text>
+      <polyline fill="none" points="81,93 99,100" stroke="#000000"/>
+      <polyline fill="none" points="99,100 80,107" stroke="#000000"/>
+      <polyline fill="none" points="110,90 110,110" stroke="#000000"/>
+      <polyline fill="none" points="110,90 105,97" stroke="#000000"/>
+      <polyline fill="none" points="110,90 115,97" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="100" y="136">En</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="120" y="136">S</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="140" y="136">R</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="148" y="84">Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="145" y="124">~Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="89" y="84">D</text>
+      <circ-port height="10" pin="240,110" width="10" x="155" y="75"/>
+      <circ-port height="8" pin="120,110" width="8" x="76" y="96"/>
+      <circ-port height="8" pin="120,130" width="8" x="76" y="76"/>
+      <circ-port height="8" pin="120,160" width="8" x="116" y="136"/>
+      <circ-port height="8" pin="120,220" width="8" x="136" y="136"/>
+      <circ-port height="8" pin="120,190" width="8" x="96" y="136"/>
+      <circ-port height="10" pin="240,130" width="10" x="155" y="115"/>
+      <circ-anchor facing="east" height="6" width="6" x="77" y="57"/>
+    </appear>
+    <wire from="(180,140)" to="(180,190)"/>
+    <wire from="(190,140)" to="(190,220)"/>
+    <wire from="(120,190)" to="(180,190)"/>
+    <wire from="(170,140)" to="(170,160)"/>
+    <wire from="(120,110)" to="(160,110)"/>
+    <wire from="(120,130)" to="(160,130)"/>
+    <wire from="(200,110)" to="(240,110)"/>
+    <wire from="(120,220)" to="(190,220)"/>
+    <wire from="(200,130)" to="(240,130)"/>
+    <wire from="(120,160)" to="(170,160)"/>
+    <comp lib="0" loc="(120,160)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,130)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(49,40)" name="Text">
+      <a name="text" val="D-FF aus Logisim-Bibliothek (Property: Steigende Flanke)"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(240,110)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,220)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="R"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,190)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Enable"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,110)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(240,130)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="4" loc="(200,110)" name="D Flip-Flop"/>
+  </circuit>
+  <circuit name="Negativ 1-flankengetriggertes D-FF">
+    <a name="circuit" val="Negativ 1-flankengetriggertes D-FF"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <polyline fill="none" points="110,90 110,110" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="145" y="124">~Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="148" y="84">Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="100" y="136">En</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="89" y="84">D</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="120" y="136">S</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="140" y="136">R</text>
+      <polyline fill="none" points="115,103 110,110" stroke="#000000"/>
+      <polyline fill="none" points="99,100 80,107" stroke="#000000"/>
+      <rect fill="none" height="80" stroke="#000000" stroke-width="2" width="80" x="80" y="60"/>
+      <text font-family="SansSerif" font-size="16" font-weight="bold" text-anchor="middle" x="120" y="79">D-FF</text>
+      <polyline fill="none" points="81,93 99,100" stroke="#000000"/>
+      <polyline fill="none" points="105,103 110,110" stroke="#000000"/>
+      <circ-port height="8" pin="120,110" width="8" x="76" y="96"/>
+      <circ-port height="8" pin="120,130" width="8" x="76" y="76"/>
+      <circ-port height="8" pin="120,160" width="8" x="116" y="136"/>
+      <circ-port height="8" pin="120,190" width="8" x="96" y="136"/>
+      <circ-port height="8" pin="120,220" width="8" x="136" y="136"/>
+      <circ-port height="10" pin="240,110" width="10" x="155" y="75"/>
+      <circ-port height="10" pin="240,130" width="10" x="155" y="115"/>
+      <circ-anchor facing="east" height="6" width="6" x="77" y="57"/>
+    </appear>
+    <wire from="(180,140)" to="(180,190)"/>
+    <wire from="(190,140)" to="(190,220)"/>
+    <wire from="(120,190)" to="(180,190)"/>
+    <wire from="(170,140)" to="(170,160)"/>
+    <wire from="(120,110)" to="(160,110)"/>
+    <wire from="(120,130)" to="(160,130)"/>
+    <wire from="(200,110)" to="(240,110)"/>
+    <wire from="(120,220)" to="(190,220)"/>
+    <wire from="(200,130)" to="(240,130)"/>
+    <wire from="(120,160)" to="(170,160)"/>
+    <comp lib="0" loc="(120,130)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(240,130)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(240,110)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,110)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(49,40)" name="Text">
+      <a name="text" val="D-FF aus Logisim-Bibliothek (Property: Fallende Flanke)"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(120,160)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,190)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Enable"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="4" loc="(200,110)" name="D Flip-Flop">
+      <a name="trigger" val="falling"/>
+    </comp>
+    <comp lib="0" loc="(120,220)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="R"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+  </circuit>
+  <circuit name="Pos-Neg 2-flankengetriggertes D-FF">
+    <a name="circuit" val="Pos-Neg 2-flankengetriggertes D-FF"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="118" y="84">Q</text>
+      <polyline fill="none" points="80,90 99,90" stroke="#000000"/>
+      <polyline fill="none" points="69,100 50,107" stroke="#000000"/>
+      <rect fill="none" height="80" stroke="#000000" stroke-width="2" width="80" x="50" y="60"/>
+      <polyline fill="none" points="51,93 69,100" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="110" y="136">R</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="59" y="84">D</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="70" y="136">En</text>
+      <polyline fill="none" points="100,90 100,110" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="115" y="124">~Q</text>
+      <text font-family="SansSerif" font-size="16" font-weight="bold" text-anchor="middle" x="90" y="79">D-FF</text>
+      <polyline fill="none" points="95,103 100,110" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="90" y="136">S</text>
+      <polyline fill="none" points="105,103 100,110" stroke="#000000"/>
+      <polyline fill="none" points="80,90 80,110" stroke="#000000"/>
+      <polyline fill="none" points="80,90 85,97" stroke="#000000"/>
+      <polyline fill="none" points="80,90 75,97" stroke="#000000"/>
+      <circ-port height="8" pin="110,100" width="8" x="46" y="76"/>
+      <circ-port height="8" pin="110,200" width="8" x="46" y="96"/>
+      <circ-port height="8" pin="110,260" width="8" x="106" y="136"/>
+      <circ-port height="8" pin="110,290" width="8" x="86" y="136"/>
+      <circ-port height="8" pin="110,320" width="8" x="66" y="136"/>
+      <circ-port height="10" pin="450,100" width="10" x="125" y="75"/>
+      <circ-port height="10" pin="450,140" width="10" x="125" y="115"/>
+      <circ-anchor facing="east" height="6" width="6" x="47" y="57"/>
+    </appear>
+    <wire from="(390,160)" to="(390,260)"/>
+    <wire from="(220,160)" to="(220,290)"/>
+    <wire from="(200,160)" to="(200,320)"/>
+    <wire from="(350,160)" to="(350,320)"/>
+    <wire from="(370,160)" to="(370,290)"/>
+    <wire from="(110,320)" to="(200,320)"/>
+    <wire from="(240,160)" to="(240,260)"/>
+    <wire from="(310,120)" to="(330,120)"/>
+    <wire from="(160,200)" to="(310,200)"/>
+    <wire from="(220,290)" to="(370,290)"/>
+    <wire from="(200,320)" to="(350,320)"/>
+    <wire from="(240,260)" to="(390,260)"/>
+    <wire from="(160,120)" to="(180,120)"/>
+    <wire from="(110,200)" to="(160,200)"/>
+    <wire from="(310,120)" to="(310,140)"/>
+    <wire from="(160,120)" to="(160,200)"/>
+    <wire from="(110,290)" to="(220,290)"/>
+    <wire from="(310,170)" to="(310,200)"/>
+    <wire from="(110,100)" to="(180,100)"/>
+    <wire from="(260,100)" to="(330,100)"/>
+    <wire from="(410,100)" to="(450,100)"/>
+    <wire from="(410,140)" to="(450,140)"/>
+    <wire from="(110,260)" to="(240,260)"/>
+    <comp lib="0" loc="(110,290)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Set"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(110,320)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Enable"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(450,140)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="1" loc="(310,140)" name="NOT Gate">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp loc="(330,80)" name="Positiv 1-flankengetriggertes D-FF"/>
+    <comp lib="0" loc="(110,100)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(110,200)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="CP"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(450,100)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(49,40)" name="Text">
+      <a name="text" val="Master-Slave D-FF"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp loc="(180,80)" name="Positiv 1-flankengetriggertes D-FF"/>
+    <comp lib="0" loc="(110,260)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Reset"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+  </circuit>
+  <circuit name="Neg-Pos 2-flankengetriggertes D-FF ohne Hilseingänge">
+    <a name="circuit" val="Neg-Pos 2-flankengetriggertes D-FF ohne Hilseingänge"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <polyline fill="none" points="69,100 50,107" stroke="#000000"/>
+      <polyline fill="none" points="51,93 69,100" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="115" y="124">~Q</text>
+      <polyline fill="none" points="85,103 80,110" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="59" y="84">D</text>
+      <polyline fill="none" points="100,90 105,97" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="118" y="84">Q</text>
+      <polyline fill="none" points="80,90 80,110" stroke="#000000"/>
+      <polyline fill="none" points="75,103 80,110" stroke="#000000"/>
+      <rect fill="none" height="80" stroke="#000000" stroke-width="2" width="80" x="50" y="60"/>
+      <polyline fill="none" points="81,110 100,110" stroke="#000000"/>
+      <polyline fill="none" points="100,90 100,110" stroke="#000000"/>
+      <polyline fill="none" points="100,90 95,97" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="16" font-weight="bold" text-anchor="middle" x="90" y="79">D-FF</text>
+      <circ-port height="8" pin="110,100" width="8" x="46" y="76"/>
+      <circ-port height="8" pin="110,200" width="8" x="46" y="96"/>
+      <circ-port height="10" pin="450,100" width="10" x="125" y="75"/>
+      <circ-port height="10" pin="450,140" width="10" x="125" y="115"/>
+      <circ-anchor facing="east" height="6" width="6" x="47" y="57"/>
+    </appear>
+    <wire from="(310,120)" to="(330,120)"/>
+    <wire from="(160,200)" to="(310,200)"/>
+    <wire from="(220,160)" to="(220,170)"/>
+    <wire from="(200,160)" to="(200,170)"/>
+    <wire from="(240,160)" to="(240,170)"/>
+    <wire from="(160,120)" to="(180,120)"/>
+    <wire from="(390,160)" to="(390,170)"/>
+    <wire from="(370,160)" to="(370,170)"/>
+    <wire from="(110,200)" to="(160,200)"/>
+    <wire from="(350,160)" to="(350,170)"/>
+    <wire from="(310,120)" to="(310,200)"/>
+    <wire from="(160,120)" to="(160,140)"/>
+    <wire from="(110,100)" to="(180,100)"/>
+    <wire from="(160,170)" to="(160,200)"/>
+    <wire from="(260,100)" to="(330,100)"/>
+    <wire from="(410,100)" to="(450,100)"/>
+    <wire from="(410,140)" to="(450,140)"/>
+    <comp lib="1" loc="(160,140)" name="NOT Gate">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp loc="(330,80)" name="Positiv 1-flankengetriggertes D-FF"/>
+    <comp lib="0" loc="(370,170)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(110,200)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="CP"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(350,170)" name="Constant">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(240,170)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(390,170)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(110,100)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(450,140)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(200,170)" name="Constant">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="6" loc="(49,40)" name="Text">
+      <a name="text" val="Master-Slave D-FF"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(220,170)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp loc="(180,80)" name="Positiv 1-flankengetriggertes D-FF"/>
+    <comp lib="0" loc="(450,100)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+  </circuit>
+  <circuit name="Neg-Pos 2-flankengetriggertes D-FF">
+    <a name="circuit" val="Neg-Pos 2-flankengetriggertes D-FF"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <polyline fill="none" points="75,103 80,110" stroke="#000000"/>
+      <polyline fill="none" points="85,103 80,110" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="110" y="136">R</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="90" y="136">S</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="59" y="84">D</text>
+      <polyline fill="none" points="69,100 50,107" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="70" y="136">En</text>
+      <rect fill="none" height="80" stroke="#000000" stroke-width="2" width="80" x="50" y="60"/>
+      <polyline fill="none" points="100,90 95,97" stroke="#000000"/>
+      <polyline fill="none" points="100,90 105,97" stroke="#000000"/>
+      <polyline fill="none" points="81,110 100,110" stroke="#000000"/>
+      <polyline fill="none" points="80,90 80,110" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="16" font-weight="bold" text-anchor="middle" x="90" y="79">D-FF</text>
+      <polyline fill="none" points="51,93 69,100" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="115" y="124">~Q</text>
+      <polyline fill="none" points="100,90 100,110" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="118" y="84">Q</text>
+      <circ-port height="8" pin="110,100" width="8" x="46" y="76"/>
+      <circ-port height="8" pin="110,200" width="8" x="46" y="96"/>
+      <circ-port height="8" pin="110,260" width="8" x="106" y="136"/>
+      <circ-port height="8" pin="110,290" width="8" x="86" y="136"/>
+      <circ-port height="8" pin="110,320" width="8" x="66" y="136"/>
+      <circ-port height="10" pin="450,100" width="10" x="125" y="75"/>
+      <circ-port height="10" pin="450,140" width="10" x="125" y="115"/>
+      <circ-anchor facing="east" height="6" width="6" x="47" y="57"/>
+    </appear>
+    <wire from="(390,160)" to="(390,260)"/>
+    <wire from="(220,160)" to="(220,290)"/>
+    <wire from="(200,160)" to="(200,320)"/>
+    <wire from="(350,160)" to="(350,320)"/>
+    <wire from="(370,160)" to="(370,290)"/>
+    <wire from="(110,320)" to="(200,320)"/>
+    <wire from="(240,160)" to="(240,260)"/>
+    <wire from="(310,120)" to="(330,120)"/>
+    <wire from="(160,200)" to="(310,200)"/>
+    <wire from="(220,290)" to="(370,290)"/>
+    <wire from="(200,320)" to="(350,320)"/>
+    <wire from="(240,260)" to="(390,260)"/>
+    <wire from="(160,120)" to="(180,120)"/>
+    <wire from="(110,200)" to="(160,200)"/>
+    <wire from="(110,290)" to="(220,290)"/>
+    <wire from="(310,120)" to="(310,200)"/>
+    <wire from="(160,120)" to="(160,140)"/>
+    <wire from="(110,100)" to="(180,100)"/>
+    <wire from="(160,170)" to="(160,200)"/>
+    <wire from="(260,100)" to="(330,100)"/>
+    <wire from="(410,100)" to="(450,100)"/>
+    <wire from="(410,140)" to="(450,140)"/>
+    <wire from="(110,260)" to="(240,260)"/>
+    <comp lib="0" loc="(450,100)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(450,140)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp loc="(330,80)" name="Positiv 1-flankengetriggertes D-FF"/>
+    <comp lib="0" loc="(110,100)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(110,290)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Set"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(110,260)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Reset"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(49,40)" name="Text">
+      <a name="text" val="Master-Slave D-FF"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp loc="(180,80)" name="Positiv 1-flankengetriggertes D-FF"/>
+    <comp lib="1" loc="(160,140)" name="NOT Gate">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(110,320)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Enable"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(110,200)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="CP"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+  </circuit>
+  <circuit name="Positiv 1-flankengetriggertes JK-FF ohne Hilfseingänge">
+    <a name="circuit" val="Positiv 1-flankengetriggertes JK-FF ohne Hilfseingänge"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <text font-family="SansSerif" font-size="16" font-weight="bold" text-anchor="middle" x="120" y="79">JK-FF</text>
+      <polyline fill="none" points="110,90 105,97" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="88" y="124">K</text>
+      <polyline fill="none" points="110,90 110,110" stroke="#000000"/>
+      <polyline fill="none" points="99,100 80,107" stroke="#000000"/>
+      <polyline fill="none" points="81,93 99,100" stroke="#000000"/>
+      <polyline fill="none" points="110,90 115,97" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="145" y="124">~Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="148" y="84">Q</text>
+      <rect fill="none" height="80" stroke="#000000" stroke-width="2" width="80" x="80" y="60"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="89" y="84">J</text>
+      <circ-port height="8" pin="120,90" width="8" x="76" y="76"/>
+      <circ-port height="8" pin="120,120" width="8" x="76" y="96"/>
+      <circ-port height="8" pin="120,150" width="8" x="76" y="116"/>
+      <circ-port height="10" pin="240,110" width="10" x="155" y="75"/>
+      <circ-port height="10" pin="240,130" width="10" x="155" y="115"/>
+      <circ-anchor facing="east" height="6" width="6" x="77" y="57"/>
+    </appear>
+    <wire from="(140,130)" to="(140,150)"/>
+    <wire from="(140,90)" to="(140,110)"/>
+    <wire from="(190,140)" to="(190,150)"/>
+    <wire from="(170,140)" to="(170,150)"/>
+    <wire from="(120,120)" to="(160,120)"/>
+    <wire from="(200,110)" to="(240,110)"/>
+    <wire from="(200,130)" to="(240,130)"/>
+    <wire from="(180,140)" to="(180,170)"/>
+    <wire from="(120,90)" to="(140,90)"/>
+    <wire from="(120,150)" to="(140,150)"/>
+    <wire from="(140,110)" to="(160,110)"/>
+    <wire from="(140,130)" to="(160,130)"/>
+    <comp lib="0" loc="(240,130)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(49,40)" name="Text">
+      <a name="text" val="JK-FF aus Logisim-Bibliothek (Property: Steigende Flanke)"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(190,150)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="4" loc="(200,110)" name="J-K Flip-Flop"/>
+    <comp lib="0" loc="(180,170)" name="Constant">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(170,150)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(120,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,150)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="K"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,90)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="J"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(240,110)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+  </circuit>
+  <circuit name="Positiv 1-flankengetriggertes JK-FF">
+    <a name="circuit" val="Positiv 1-flankengetriggertes JK-FF"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <rect fill="none" height="80" stroke="#000000" stroke-width="2" width="80" x="80" y="60"/>
+      <polyline fill="none" points="81,93 99,100" stroke="#000000"/>
+      <polyline fill="none" points="110,90 110,110" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="16" font-weight="bold" text-anchor="middle" x="120" y="79">JK-FF</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="148" y="84">Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="100" y="136">En</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="140" y="136">R</text>
+      <polyline fill="none" points="110,90 115,97" stroke="#000000"/>
+      <polyline fill="none" points="110,90 105,97" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="89" y="84">J</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="145" y="124">~Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="120" y="136">S</text>
+      <polyline fill="none" points="99,100 80,107" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="88" y="124">K</text>
+      <circ-port height="8" pin="120,90" width="8" x="76" y="76"/>
+      <circ-port height="8" pin="120,120" width="8" x="76" y="96"/>
+      <circ-port height="8" pin="120,150" width="8" x="76" y="116"/>
+      <circ-port height="8" pin="120,190" width="8" x="116" y="136"/>
+      <circ-port height="8" pin="120,220" width="8" x="96" y="136"/>
+      <circ-port height="8" pin="120,250" width="8" x="136" y="136"/>
+      <circ-port height="10" pin="240,110" width="10" x="155" y="75"/>
+      <circ-port height="10" pin="240,130" width="10" x="155" y="115"/>
+      <circ-anchor facing="east" height="6" width="6" x="77" y="57"/>
+    </appear>
+    <wire from="(120,220)" to="(180,220)"/>
+    <wire from="(190,140)" to="(190,250)"/>
+    <wire from="(120,90)" to="(140,90)"/>
+    <wire from="(120,150)" to="(140,150)"/>
+    <wire from="(140,110)" to="(160,110)"/>
+    <wire from="(140,130)" to="(160,130)"/>
+    <wire from="(120,190)" to="(170,190)"/>
+    <wire from="(170,140)" to="(170,190)"/>
+    <wire from="(180,140)" to="(180,220)"/>
+    <wire from="(140,130)" to="(140,150)"/>
+    <wire from="(140,90)" to="(140,110)"/>
+    <wire from="(120,120)" to="(160,120)"/>
+    <wire from="(200,110)" to="(240,110)"/>
+    <wire from="(200,130)" to="(240,130)"/>
+    <wire from="(120,250)" to="(190,250)"/>
+    <comp lib="0" loc="(120,250)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="R"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="4" loc="(200,110)" name="J-K Flip-Flop"/>
+    <comp lib="0" loc="(120,150)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="K"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(49,40)" name="Text">
+      <a name="text" val="JK-FF aus Logisim-Bibliothek (Property: Steigende Flanke)"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(240,110)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(240,130)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,220)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Enable"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,190)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,90)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="J"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+  </circuit>
+  <circuit name="Negativ 1-flankengetriggertes JK-FF">
+    <a name="circuit" val="Negativ 1-flankengetriggertes JK-FF"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="145" y="124">~Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="140" y="136">R</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="148" y="84">Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="89" y="84">J</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="88" y="124">K</text>
+      <polyline fill="none" points="99,100 80,107" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="16" font-weight="bold" text-anchor="middle" x="120" y="79">JK-FF</text>
+      <polyline fill="none" points="81,93 99,100" stroke="#000000"/>
+      <polyline fill="none" points="115,103 110,110" stroke="#000000"/>
+      <polyline fill="none" points="110,90 110,110" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="100" y="136">En</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="120" y="136">S</text>
+      <rect fill="none" height="80" stroke="#000000" stroke-width="2" width="80" x="80" y="60"/>
+      <polyline fill="none" points="105,103 110,110" stroke="#000000"/>
+      <circ-port height="8" pin="120,90" width="8" x="76" y="76"/>
+      <circ-port height="8" pin="120,120" width="8" x="76" y="96"/>
+      <circ-port height="8" pin="120,150" width="8" x="76" y="116"/>
+      <circ-port height="8" pin="120,190" width="8" x="116" y="136"/>
+      <circ-port height="8" pin="120,220" width="8" x="96" y="136"/>
+      <circ-port height="8" pin="120,250" width="8" x="136" y="136"/>
+      <circ-port height="10" pin="240,110" width="10" x="155" y="75"/>
+      <circ-port height="10" pin="240,130" width="10" x="155" y="115"/>
+      <circ-anchor facing="east" height="6" width="6" x="77" y="57"/>
+    </appear>
+    <wire from="(120,220)" to="(180,220)"/>
+    <wire from="(190,140)" to="(190,250)"/>
+    <wire from="(120,90)" to="(140,90)"/>
+    <wire from="(120,150)" to="(140,150)"/>
+    <wire from="(140,110)" to="(160,110)"/>
+    <wire from="(140,130)" to="(160,130)"/>
+    <wire from="(120,190)" to="(170,190)"/>
+    <wire from="(170,140)" to="(170,190)"/>
+    <wire from="(180,140)" to="(180,220)"/>
+    <wire from="(140,130)" to="(140,150)"/>
+    <wire from="(140,90)" to="(140,110)"/>
+    <wire from="(120,120)" to="(160,120)"/>
+    <wire from="(200,110)" to="(240,110)"/>
+    <wire from="(200,130)" to="(240,130)"/>
+    <wire from="(120,250)" to="(190,250)"/>
+    <comp lib="4" loc="(200,110)" name="J-K Flip-Flop">
+      <a name="trigger" val="falling"/>
+    </comp>
+    <comp lib="0" loc="(120,90)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="J"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,150)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="K"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(240,110)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(240,130)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,220)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Enable"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,190)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,250)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="R"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(120,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(49,40)" name="Text">
+      <a name="text" val="JK-FF aus Logisim-Bibliothek (Property: Fallende Flanke)"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+  </circuit>
+  <circuit name="Pos-Neg 2-flankengetriggertes JK-FF ohne Hilfseingänge">
+    <a name="circuit" val="Pos-Neg 2-flankengetriggertes JK-FF ohne Hilfseingänge"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <polyline fill="none" points="69,100 50,107" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="59" y="84">J</text>
+      <rect fill="none" height="80" stroke="#000000" stroke-width="2" width="80" x="50" y="60"/>
+      <text font-family="SansSerif" font-size="16" font-weight="bold" text-anchor="middle" x="90" y="79">JK-FF</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="118" y="84">Q</text>
+      <polyline fill="none" points="51,93 69,100" stroke="#000000"/>
+      <polyline fill="none" points="95,103 100,110" stroke="#000000"/>
+      <polyline fill="none" points="80,90 80,110" stroke="#000000"/>
+      <polyline fill="none" points="80,90 99,90" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="115" y="124">~Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="58" y="124">K</text>
+      <polyline fill="none" points="100,90 100,110" stroke="#000000"/>
+      <polyline fill="none" points="105,103 100,110" stroke="#000000"/>
+      <polyline fill="none" points="80,90 85,97" stroke="#000000"/>
+      <polyline fill="none" points="80,90 75,97" stroke="#000000"/>
+      <circ-port height="8" pin="110,100" width="8" x="46" y="76"/>
+      <circ-port height="8" pin="110,140" width="8" x="46" y="96"/>
+      <circ-port height="8" pin="110,200" width="8" x="46" y="116"/>
+      <circ-port height="10" pin="450,100" width="10" x="125" y="75"/>
+      <circ-port height="10" pin="450,140" width="10" x="125" y="115"/>
+      <circ-anchor facing="east" height="6" width="6" x="47" y="57"/>
+    </appear>
+    <wire from="(310,120)" to="(330,120)"/>
+    <wire from="(160,200)" to="(310,200)"/>
+    <wire from="(220,160)" to="(220,170)"/>
+    <wire from="(240,160)" to="(240,170)"/>
+    <wire from="(200,160)" to="(200,170)"/>
+    <wire from="(160,120)" to="(180,120)"/>
+    <wire from="(390,160)" to="(390,170)"/>
+    <wire from="(370,160)" to="(370,170)"/>
+    <wire from="(110,200)" to="(160,200)"/>
+    <wire from="(350,160)" to="(350,170)"/>
+    <wire from="(310,180)" to="(310,200)"/>
+    <wire from="(160,120)" to="(160,200)"/>
+    <wire from="(310,120)" to="(310,150)"/>
+    <wire from="(110,140)" to="(180,140)"/>
+    <wire from="(110,100)" to="(180,100)"/>
+    <wire from="(260,100)" to="(330,100)"/>
+    <wire from="(410,100)" to="(450,100)"/>
+    <wire from="(410,140)" to="(450,140)"/>
+    <comp lib="0" loc="(110,100)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="J"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(200,170)" name="Constant">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="6" loc="(49,40)" name="Text">
+      <a name="text" val="Master-Slave JK-FF"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(220,170)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(390,170)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp loc="(330,80)" name="Positiv 1-flankengetriggertes D-FF"/>
+    <comp lib="0" loc="(110,140)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="K"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(370,170)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp loc="(180,80)" name="Positiv 1-flankengetriggertes JK-FF"/>
+    <comp lib="0" loc="(450,100)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(240,170)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(110,200)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="CP"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="1" loc="(310,150)" name="NOT Gate">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(350,170)" name="Constant">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(450,140)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+  </circuit>
+  <circuit name="Pos-Neg 2-flankengetriggertes JK-FF">
+    <a name="circuit" val="Pos-Neg 2-flankengetriggertes JK-FF"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <polyline fill="none" points="69,100 50,107" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="59" y="84">J</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="118" y="84">Q</text>
+      <polyline fill="none" points="100,90 100,110" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="90" y="136">S</text>
+      <polyline fill="none" points="80,90 85,97" stroke="#000000"/>
+      <rect fill="none" height="80" stroke="#000000" stroke-width="2" width="80" x="50" y="60"/>
+      <polyline fill="none" points="80,90 80,110" stroke="#000000"/>
+      <polyline fill="none" points="51,93 69,100" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="115" y="124">~Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="70" y="136">En</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="110" y="136">R</text>
+      <polyline fill="none" points="80,90 75,97" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="16" font-weight="bold" text-anchor="middle" x="90" y="79">JK-FF</text>
+      <polyline fill="none" points="95,103 100,110" stroke="#000000"/>
+      <polyline fill="none" points="80,90 99,90" stroke="#000000"/>
+      <polyline fill="none" points="105,103 100,110" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="58" y="124">K</text>
+      <circ-port height="8" pin="110,100" width="8" x="46" y="76"/>
+      <circ-port height="8" pin="110,140" width="8" x="46" y="116"/>
+      <circ-port height="8" pin="110,200" width="8" x="46" y="96"/>
+      <circ-port height="10" pin="450,100" width="10" x="125" y="75"/>
+      <circ-port height="10" pin="450,140" width="10" x="125" y="115"/>
+      <circ-port height="8" pin="110,260" width="8" x="106" y="136"/>
+      <circ-port height="8" pin="110,290" width="8" x="86" y="136"/>
+      <circ-port height="8" pin="110,320" width="8" x="66" y="136"/>
+      <circ-anchor facing="east" height="6" width="6" x="47" y="57"/>
+    </appear>
+    <wire from="(390,160)" to="(390,260)"/>
+    <wire from="(220,160)" to="(220,290)"/>
+    <wire from="(200,160)" to="(200,320)"/>
+    <wire from="(350,160)" to="(350,320)"/>
+    <wire from="(370,160)" to="(370,290)"/>
+    <wire from="(110,320)" to="(200,320)"/>
+    <wire from="(240,160)" to="(240,260)"/>
+    <wire from="(310,120)" to="(330,120)"/>
+    <wire from="(160,200)" to="(310,200)"/>
+    <wire from="(220,290)" to="(370,290)"/>
+    <wire from="(200,320)" to="(350,320)"/>
+    <wire from="(240,260)" to="(390,260)"/>
+    <wire from="(160,120)" to="(180,120)"/>
+    <wire from="(110,200)" to="(160,200)"/>
+    <wire from="(310,180)" to="(310,200)"/>
+    <wire from="(160,120)" to="(160,200)"/>
+    <wire from="(110,290)" to="(220,290)"/>
+    <wire from="(310,120)" to="(310,150)"/>
+    <wire from="(110,140)" to="(180,140)"/>
+    <wire from="(110,100)" to="(180,100)"/>
+    <wire from="(260,100)" to="(330,100)"/>
+    <wire from="(410,100)" to="(450,100)"/>
+    <wire from="(410,140)" to="(450,140)"/>
+    <wire from="(110,260)" to="(240,260)"/>
+    <comp loc="(330,80)" name="Positiv 1-flankengetriggertes D-FF"/>
+    <comp lib="0" loc="(110,320)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Enable"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(110,260)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Reset"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(110,100)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="J"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(110,200)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="CP"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(110,140)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="K"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(450,100)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp loc="(180,80)" name="Positiv 1-flankengetriggertes JK-FF"/>
+    <comp lib="0" loc="(450,140)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(110,290)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Set"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="1" loc="(310,150)" name="NOT Gate">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="6" loc="(49,40)" name="Text">
+      <a name="text" val="Master-Slave JK-FF"/>
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="halign" val="left"/>
+    </comp>
+  </circuit>
+</project>
